@@ -1,26 +1,18 @@
 ---
 layout: page
-title: "About"
-permalink: /about
+title: About
+permalink: /about/
 ---
 
-# Some heading
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
-SEINFELD Episode no. 94 "The Mom and Pop Store" (Original air date: 17 Nov 1994)
+You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
 
-Directed by Andy Ackerman. Written by Tom Gammill and Max Pross.
+You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
 
-Guest stars:
-    Ian Abercrombie (Mr. Pitt)
-    Bryan Cranston (Tim Whatley)
-    Jon Voight (Himself)
-    Elsa Raven (Mom)
-    Michael Robello (Pop)
-    Tom Wright (Mr. Morgan)
-    Ken Thorley (Car Salesman)
-    Dan Frischman (Guy on phone)
-    Nancy Balbirer (Dentist #1 at party)
-    Rick Fitts (Dentist #2 at party)
-    Pat Asanti (Electrician)
-    Steve Brady (Contest winner)
-    Matt Gallini (Tough guy)
+
+[jekyll-organization]: https://github.com/jekyll
