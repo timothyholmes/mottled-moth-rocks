@@ -1,6 +1,6 @@
 ---
 layout: landing
-photo: /assets/images/owl.JPG
+photo: /assets/images/owl.jpg
 photoDescription: Owl statue
 ---
 
