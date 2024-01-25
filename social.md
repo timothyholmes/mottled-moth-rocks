@@ -4,9 +4,15 @@ title: Social
 permalink: /social/
 ---
 
-Social media in the traditional sense is not something that interests me. Scrolling endlessly leaves me feeling listless. Instead I prefer to center my social media around activies I like.
+Scrolling endlessly leaves me feeling listless. Instead I prefer to center my social media around activies I like.
+
+I'm a big fan of Retro, a photo journaling app from [some of the Instagram OGs](https://techcrunch.com/2023/07/07/retro-is-a-deeply-personal-photo-journaling-app-for-close-friends/).
 
 * [Goodreads, Book tracking](https://www.goodreads.com/user/show/103225612-timothy-holmes)
 * [Marathon, TV tracking](https://marathontv.app/profile/vMH3BJdBiNSaqkontO2Sb2Xunyd2)
 * [Letterboxd, Movie tracking](https://boxd.it/18njB)
 * [Chess.com](https://www.chess.com/member/mottledmoth)
+* Retro App, @timholmes
+
+![Flowers at Maymont](/assets/images/flowers-at-maymont.JPG "Flowers at Maymont")
+Flowers at [Maymont.](https://en.wikipedia.org/wiki/Maymont)

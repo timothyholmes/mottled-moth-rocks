@@ -12,7 +12,7 @@ html {
 
 body {
     height: 100%;
-    background-color: #073d16;
+    background-color: #05240f;
     color: #f5ebd3;
     padding: 0;
     margin: 0;
@@ -53,6 +53,10 @@ section {
     max-width: 2000px;
 }
 
+.page-body {
+    padding-bottom: 5%;
+}
+
 nav > a {
     font-size: 25px;
     padding-right: 4%;
@@ -88,6 +92,29 @@ hr {
     }
 }
 
+@media (prefers-color-scheme: light) {
+    body {
+        height: 100%;
+        background-color: #f5ebd3;
+        color: #05240f;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        color: #05240f;
+    }
+
+    .page-footer {
+        background-color: #e0cfa6;
+        text-align: center;
+    }
+
+    .blog-post-preview-image-container {
+        border: 1px solid #05240f;
+    }
+}
+
 .description-image-container {
     display: inline;
     max-width: 50%;
@@ -109,4 +136,27 @@ hr {
 
 .nav-bar {
     text-align: center;
+}
+
+.blog-post-preview-text {
+    display: inline;
+    max-width: 50%;
+}
+
+.blog-post-preview-image-container {
+    justify-content: right;
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: 0;
+    border: 1px solid #f5ebd3;
+}
+
+.blog-post-preview{
+    display: flex;
+}
+
+.album-art {
+    margin: auto;
+    width: 65%;
+    padding-bottom: 2%;
 }
