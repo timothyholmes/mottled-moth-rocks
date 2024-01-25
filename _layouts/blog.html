@@ -28,11 +28,13 @@
                                 <p>{{ post.description }}</p>
                             </li>
                         </section>
+                        {% if post.previewImage %}
                         <section class="blog-post-preview-image-container">
                             <a href="{{ post.url }}">
                                 <img src="{{ post.previewImage }}" class="blog-post-preview-image" />
                             </a>
                         </section>
+                        {% endif %}
                     </section>
                     {% endfor %}
                 </ul>
