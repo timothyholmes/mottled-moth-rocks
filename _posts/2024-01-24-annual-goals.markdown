@@ -8,7 +8,7 @@ description: Looking ahead to the new year
 
 I spin my tires without a good plan. The past two years have been great for nurturing creativity in my personal life. I'm shooting for more of that this year, with wider focus than just working on music.
 
-1. 75 medium challenge with Dzhu January - March
+1. 75 medium challenge January - March
 2. ✅ Upload Mottled Moth split with Matt
 3. ✅ Make a personal website, with a blog
 4. Winter / Spring by Mottled Moth
@@ -27,5 +27,3 @@ I spin my tires without a good plan. The past two years have been great for nurt
 11. Reading Bingo 2024
 12. Try more new restaurants
 13. Make a garbage pickup system for walks
-14. Start looking for a house
-15. Set a date for trying for a kid
