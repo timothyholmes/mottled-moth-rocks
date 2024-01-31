@@ -29,3 +29,11 @@ bundle exec jekyll serve
 bundle exec jekyll serve --drafts
 ```
 
+## Recommended Tooling
+
+* [mdspell](https://github.com/mtuchowski/mdspell)
+
+```
+gem install mdspell
+mdspell */**/*.md --config ./.mdspell.yml
+```

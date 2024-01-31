@@ -4,7 +4,7 @@ title: Social
 permalink: /social/
 ---
 
-Scrolling endlessly leaves me feeling listless. Instead I prefer to center my social media around activies I like.
+Scrolling endlessly leaves me feeling listless. Instead I prefer to center my social media around activities I enjoy.
 
 I'm a big fan of Retro, a photo journaling app from [some of the Instagram OGs](https://techcrunch.com/2023/07/07/retro-is-a-deeply-personal-photo-journaling-app-for-close-friends/).
 
