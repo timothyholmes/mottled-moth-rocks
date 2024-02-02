@@ -12,6 +12,7 @@ I'm a big fan of Retro, a photo journaling app from [some of the Instagram OGs](
 * [Marathon, TV tracking](https://marathontv.app/profile/vMH3BJdBiNSaqkontO2Sb2Xunyd2)
 * [Letterboxd, Movie tracking](https://boxd.it/18njB)
 * [Chess.com](https://www.chess.com/member/mottledmoth)
+* [Github, code portfolio](https://github.com/timothyholmes)
 * Retro App, @timholmes
 
 ![Flowers at Maymont](/assets/images/flowers-at-maymont.JPG "Flowers at Maymont")

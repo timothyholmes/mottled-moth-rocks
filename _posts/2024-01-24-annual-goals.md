@@ -17,7 +17,7 @@ I spin my tires without a good plan. The past two years have been great for nurt
     * Knife literacy
     * Read a book on the topic
     * Make stock
-    * Try 6 new receipes
+    * Try 6 new recipes
 7. Take 4 hikes with Dzhu
 8. Visit 2 friends out of state 
 9. Learn a roller skating trick
