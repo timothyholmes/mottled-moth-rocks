@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 title:  "Harlem Photographers"
-categories: annual
+categories: lore
 description: Interesting photos discovered in a novel
 ---
 
