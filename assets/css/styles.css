@@ -153,5 +153,6 @@ hr {
 .album-art {
     margin: auto;
     width: 65%;
+    padding-top: 2%;
     padding-bottom: 2%;
 }
