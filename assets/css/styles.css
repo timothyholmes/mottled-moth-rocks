@@ -23,7 +23,7 @@ body {
 }
 
 a {
-    color: #dfe8f5;
+    color: #faf3d4;
 }
 
 section {
@@ -92,6 +92,15 @@ hr {
     }
 }
 
+.blog-date {
+    color: #d9d5c5;
+    font-style: italic;
+}
+
+.blog-post-title {
+    text-decoration: none;
+}
+
 @media (prefers-color-scheme: light) {
     body {
         height: 100%;
@@ -137,6 +146,7 @@ hr {
 .blog-post-preview-text {
     display: inline;
     max-width: 50%;
+    padding-bottom: 2%;
 }
 
 .blog-post-preview-image-container {

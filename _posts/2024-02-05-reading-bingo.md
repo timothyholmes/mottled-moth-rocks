@@ -26,8 +26,6 @@ Last year’s champion was my lovely wife, with a whopping 26 points. For her st
 
 [A PDF of the boards is available for anyone that wants to play along](/assets/docs/reading-bingo-2024.pdf "Download reading bingo boards"). I highly recommend finding some like minded friends or family with which to make a league. If anyone needs a book for "read a book from someone's board last year" you can find all of my 2023 reads [here on Goodreads.](https://www.goodreads.com/review/list/103225612?shelf=2023) Happy reading!
 
-
-
 <div class="album-art">
     <img src="/assets/images/books-large.png" alt="Stacks of books in Norfolk, VA" />
 </div>
