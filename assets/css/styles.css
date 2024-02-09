@@ -95,6 +95,12 @@ hr {
 .blog-date {
     color: #d9d5c5;
     font-style: italic;
+    text-decoration: none;
+}
+
+
+.latest-posts {
+    padding-bottom: 5%;
 }
 
 .blog-post-title {
@@ -117,6 +123,10 @@ hr {
     .page-footer {
         background-color: #e0cfa6;
         text-align: center;
+    }
+
+    .blog-date {
+        color: #05240f;
     }
 }
 

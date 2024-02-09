@@ -8,6 +8,7 @@ Scrolling endlessly leaves me feeling listless. Instead I prefer to center my so
 
 I'm a big fan of Retro, a photo journaling app from [some of the Instagram OGs](https://techcrunch.com/2023/07/07/retro-is-a-deeply-personal-photo-journaling-app-for-close-friends/).
 
+* [Apple Music](https://music.apple.com/profile/timothyholmes)
 * [Goodreads, Book tracking](https://www.goodreads.com/user/show/103225612-timothy-holmes)
 * [Marathon, TV tracking](https://marathontv.app/profile/vMH3BJdBiNSaqkontO2Sb2Xunyd2)
 * [Letterboxd, Movie tracking](https://boxd.it/18njB)

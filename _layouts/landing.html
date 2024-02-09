@@ -22,15 +22,15 @@
                         <span class="description-text">
                             {{ content }}
 
-                            <h2>Latest Posts</h2>
+                            <h2 class="latest-posts">Latest Posts</h2>
 
                             <ul>
                                 {% for post in site.posts limit:2 %}
-                                <li>
-                                    <p>{{ post.date | date: "%B, %-d %Y" }}</p>
-                                    <a href="{{ post.url }}">{{ post.title }}</a>
-                                    <p>{{ post.description }}</p>
-                                </li>
+                                <section class="blog-post-preview-text">
+                                    <h3><a class="blog-post-title" href="{{ post.url }}">{{ post.title }}</a></h3>
+                                    <span><a class="blog-date" href="{{ post.url }}">{{ post.date | date: "%B, %-d %Y" }}</a><br></span>
+                                    <span><a class="blog-post-title" href="{{ post.url }}">{{ post.description }}</a></span>
+                                </section>
                                 {% endfor %}
                             </ul>
                         </span>

@@ -23,7 +23,7 @@
                     <section class="blog-post-preview">
                         <section class="blog-post-preview-text">
                             <h3><a class="blog-post-title" href="{{ post.url }}">{{ post.title }}</a></h3>
-                            <span class="blog-date"><a class="blog-post-title" href="{{ post.url }}">{{ post.date | date: "%B, %-d %Y" }}</a><br></span>
+                            <span><a class="blog-date" href="{{ post.url }}">{{ post.date | date: "%B, %-d %Y" }}</a><br></span>
                             <span><a class="blog-post-title" href="{{ post.url }}">{{ post.description }}</a></span>
                         </section>
                         {% if post.previewImage %}
