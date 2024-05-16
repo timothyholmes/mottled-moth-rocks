@@ -2,6 +2,7 @@
 layout: blog-post
 title:  "Harlem Photographers"
 categories: lore
+date:   2024-01-16 20:55:08 -050
 description: Interesting photos discovered in a novel
 ---
 

@@ -2,6 +2,7 @@
 layout: blog-post
 title:  "Virtues"
 categories: system
+date:   2025-01-16 20:55:08 -050
 description: Establishing pillars
 ---
 
