@@ -57,7 +57,7 @@ section {
     padding-bottom: 5%;
 }
 
-.page-body ul {
+.page-body .blog-list {
     padding: 0;
     list-style-type: none;
 }
