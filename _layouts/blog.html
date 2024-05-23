@@ -20,6 +20,7 @@
                 <h2>Posts</h2>
                 <ul>
                     {% for post in site.posts %}
+                    <li>
                     <section class="blog-post-preview">
                         <section class="blog-post-preview-text">
                             <h3><a class="blog-post-title" href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -34,6 +35,7 @@
                         </section>
                         {% endif %}
                     </section>
+                    </li>
                     {% endfor %}
                 </ul>
             </main>
