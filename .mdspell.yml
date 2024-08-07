@@ -50,3 +50,13 @@ ignored:
 - stickied
 - APA
 - podcasters
+- TLDR
+- booleans
+- SpicySet
+- addObject
+- hasObject
+- reimplement
+- SpicySet
+- stringified
+- npm
+- JS
