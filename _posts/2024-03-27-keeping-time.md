@@ -14,7 +14,8 @@ previewImage: /assets/images/keeping-time-small.png
 This is part of a series:
 1. [The Path](/system/2024/02/02/the-path.html)
 2. [Keeping Time](/system/2024/03/27/keeping-time.html)
-2. [Action Precedes Motivation](/system/2024/05/29/action-precedes-motivation.html)
+3. [Action Precedes Motivation](/system/2024/05/29/action-precedes-motivation.html)
+4. [Virtues](/system/2024/08/14/virtues.html)
 
 Life is a journey through time, and threading the needle from who you are to who you’d like to be is no easy task. It’s incredibly easy to create bad habits and poor behavioral scripts which offend our better intentions, and then allow them to insidiously take custody of our time. These can be combatted with a few simple techniques which emerged for me as I worked through [the Adult ADHD Toolkit,](https://www.goodreads.com/en/book/show/21087203) a wonderful book that offered a ton of great advice regarding time management and staying motivated.
 
