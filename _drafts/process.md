@@ -20,31 +20,33 @@ This is part of a series:
 
 # Overview
 
-In this series' preceding posts I covered the strategies I use to drive consistent behaviors in areas that aid my self fulfillment. Identifying the actions that lead to fulfillment is by no means an easy task, yet it is the crucial starting point for performing worthwhile actions. Once your virtues have been identified and you understand the techniques to perform consistent action towards overarching goals, the process can be applied to your discrete application. This is how I choose to apply these lessons.
+In this series' preceding posts I covered the strategies I use to drive consistent behaviors in areas that aid my self fulfillment. Identifying the actions that lead to fulfillment is by no means an easy task, yet it is the crucial starting point for performing worthwhile actions. Once your virtues have been identified and you understand the techniques to perform consistent action towards overarching goals, such as [sessions, routines, and retrospectives](/system/2024/03/27/keeping-time.html), the process can be applied for discrete application.
+
+## The First of the Year
+
+I choose to start my goal setting at the start of the New Year. The annual turning of the calendar offers a natural time every year to take stock of life and reevaluate direction. At this point I select a few projects and overarching goals to work on throughout the year, using [my virtues](/system/2024/08/14/virtues.html) to guide the selections. As always, start small and select a reasonable number of items to be done. There're few things that knock one off track with as much efficiency as trying to do too much.
+
+I set [goals for 2024](/annual/2024/01/24/annual-goals.html) in this fashion. Here's a subset of my goals set for the year:
+* Releasing a new batch of Mottled Moth songs
+* Visiting friends out of state
+* Developing a website
+* Improve my culinary skills
 
 ## The First of the Month
 
-Research updates the start of a time period is a helpful mental framing that makes things more likely to stick. Think New Year's Resolutions. Review your virtues for the next steps.
+Identify a project or two you'd like to progress during the coming month. Come up with a single step, realistically achievable in the next month, to complete. For this example, I'll use my current Mottled Moth project. In my current state, my next step is to finish writing lyrics for my next batch of 5 songs. I'll schedule a session for once a week, every Thursday, to work towards completing this stage of the project.
 
-Virtues for reference:
-* Creativity - develop ideas and implement them
-* Knowledge - expand understanding
-* Fitness - have a balanced diet and stay physically active
-* Network - nurturing relationships
-* Spirit - manage mental health
-* Home - build a happy home
-* Lore - craft a repository of media that enhances understanding of the human condition
+Some goals are more passive, and are developed through smaller habits rather than dedicated session time. For these I establish routine lists for different timeframes. These require some initial setup, but once they exist you can use the same ones every day/week/month. On subsequent months, I'd just take a few minutes to review my routines and make sure they align with how I want to live.
 
-Identify a project or two you'd like to progress during the coming month. Come up with a single step, realistically achievable in the next month, to complete. For this example, I'll use my current Mottled Moth project. From where I am right now, my next step is to finish writing lyrics for my next batch of 5 songs. Schedule a session to do the work for this goal. I'll schedule mine for once a week, every Thursday.
-
-Establish routine lists. These require some initial setup, but once they exist you can use the same ones every day/week/month. On subsequent months, I'd just take a few minutes to review my routines and make sure they align with how I want to live.
+My routines look something like this:
 
 Daily
 * Meditate - spirit
+* Read 10 pages - lore
 * Cook dinner or do the dishes - home
 * Take out the trash - home
 * Exercise for 45 minutes - fitness
-* Don't smoke a cigarette = fitness
+* Don't smoke a cigarette - fitness
 
 Weekly
 * Clean a bathroom - home
@@ -55,14 +57,15 @@ Weekly
 
 Monthly
 * Watch a movie - lore
-* Finish a book - lore
 * Demo a song - creativity
 
 ## Daily
 
-Check off your daily routines, review completion rate at the end of each day. Great time to do a gratitude log, 3 things you're grateful for and what the intention is for the next day.
+Throughout the day, check off routines you've completed. Prioritize knocking out daily tasks and scheduled sessions. 
 
-## Weekly, every Sunday
+In the evening, take some time to review how many daily routines were completed. Do this at the same time every day to establish a ritual. I take a minute to do a short gratitude journal at the end of the day when I do this, and set an intention for the day to come.
+
+## Weekly
 
 Review any notes created during the last week. Check in on how well you completed your daily and weekly routines, and schedule some time to complete one or two of the monthly ones before the next weekly review.
 
@@ -72,9 +75,9 @@ Review how the past month went, and repeat the cycle.
 
 # Summary
 
-I've been doing this for a few years now, an accomplished much with it. 
+I've been doing this for a few years now, and have accomplished much with it. 
 
-* Ton of books / TV / Movies
+* Read ~23 books a year
 * Dropped 25lbs
 * Released 2 projects as Mottled Moth
 * Deployed a ton of great code
