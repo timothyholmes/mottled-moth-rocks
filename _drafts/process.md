@@ -24,13 +24,18 @@ In this series' preceding posts I covered the strategies I use to drive consiste
 
 ## The First of the Year
 
-I choose to start my goal setting at the start of the New Year. The annual turning of the calendar offers a natural time every year to take stock of life and reevaluate direction. At this point I select a few projects and overarching goals to work on throughout the year, using [my virtues](/system/2024/08/14/virtues.html) to guide the selections. As always, start small and select a reasonable number of items to be done. There're few things that knock one off track with as much efficiency as trying to do too much.
+I choose to start my goal setting at the start of the New Year. The annual turning of the calendar offers a natural time to take stock of life and reevaluate direction. At this point I select a few projects and overarching goals to work on throughout the year, using [my virtues](/system/2024/08/14/virtues.html) to guide the selections. As always, start small and select a reasonable number of items to be done. There're few things that knock one off track with as much efficiency as trying to do too much.
+
+> Simplicity, simplicity, simplicity! I say, let your affairs be as two or three, and not a hundred or a thousand; instead of a million count half a dozen, and keep your accounts on your thumb nail. In the midst of this chopping sea of civilized life, such are the clouds and storms and quicksands and thousand-and-one items to be allowed for, that a man has to live, if he would not founder and go to the bottom and not make his port at all, by dead reckoning, and he must be a great calculator indeed who succeeds. Simplify, simplify.
+- Henry David Thoreau, Walden
 
 I set [goals for 2024](/annual/2024/01/24/annual-goals.html) in this fashion. Here's a subset of my goals set for the year:
 * Releasing a new batch of Mottled Moth songs
 * Visiting friends out of state
 * Developing a website
 * Improve my culinary skills
+
+It's worth noting that perfection and completing every item on the list is not neccessarily the goal here. Things come up, and priorities change as new opportunities emerge. For instance one of my goals this year was to take my film photography, something I do off and on for fun, and compile it into a Zine of some sort. When I started slotting this into my life, I realized that I was not prepared to do the work properly to get this done in a satisfying fastion. I find that it's helpful to know when to drop an idea, so that efforts are not spread past their usefulness.
 
 ## The First of the Month
 
@@ -59,19 +64,17 @@ Monthly
 * Watch a movie - lore
 * Demo a song - creativity
 
+Typically, routines should have some metric observable over time to validate that a routine's consistency is paying off. For example for any fitness related goals, a successful metrics for me are tracking body weight and miles ridden on my bike.
+
 ## Daily
 
-Throughout the day, check off routines you've completed. Prioritize knocking out daily tasks and scheduled sessions. 
+Daily life is where past intentions meet future accomplishments. The ultimate goal of meticulous planning is to create a well-intentioned to-do list that removes the mental strain of scheduling important activities. Throughout the day, my focus is simply to complete the scheduled tasks and routines. Consistency, once cultivated, builds momentum, making it easier to maintain. The more you rely on the to-do list as a guide for how to spend your time, the more naturally your habits will integrate into your daily rhythms.
 
 In the evening, take some time to review how many daily routines were completed. Do this at the same time every day to establish a ritual. I take a minute to do a short gratitude journal at the end of the day when I do this, and set an intention for the day to come.
 
 ## Weekly
 
 Review any notes created during the last week. Check in on how well you completed your daily and weekly routines, and schedule some time to complete one or two of the monthly ones before the next weekly review.
-
-## The End of the month
-
-Review how the past month went, and repeat the cycle.
 
 # Summary
 

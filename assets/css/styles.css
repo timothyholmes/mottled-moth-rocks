@@ -22,6 +22,12 @@ body {
     box-sizing: inherit;
 }
 
+blockquote {
+    font-style: italic;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 a {
     color: #faf3d4;
 }
