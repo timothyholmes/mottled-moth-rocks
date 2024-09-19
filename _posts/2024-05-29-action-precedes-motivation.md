@@ -16,6 +16,7 @@ This is part of a series:
 2. [Keeping Time](/system/2024/03/27/keeping-time.html)
 3. [Action Precedes Motivation](/system/2024/05/29/action-precedes-motivation.html)
 4. [Virtues](/system/2024/08/14/virtues.html)
+5. [The Process](/system/2024/09/13/process.html)
 
 Motivation is tricky business. The common understanding is that motivation is the driving force for taking action. Yet the nature of our world is one of constant distractions and easy hits of dopamine, and the overwhelming availability of effortless rewards can degrade a sense of motivation to work on things that take time to develop. In order to reap long term rewards one must develop consistency in their attention to the craft, whether that be playing guitar, writing, programming, or some other hobby that has a path of progression.
 
