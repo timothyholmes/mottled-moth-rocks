@@ -60,3 +60,6 @@ ignored:
 - stringified
 - npm
 - JS
+- moleskins
+- pdfs
+- youtube
