@@ -18,7 +18,7 @@
                 <header class="page-header">{% include header.html %}</header>
                 <main class="page-body">
                     <h2>{{ page.title }}</h2>
-                    <div class="description-container">
+                    <!-- <div class="description-container">
                         <span class="description-text">
                             {{ content }}
 
@@ -36,7 +36,10 @@
                         </span>
                         <span class="description-image-container">
                             <img class="description-image" src="{{ page.photo}}" alt="{{ page.photoDescription }}" />
-                        </span>
+                        </span> -->
+                        
+                        <img class="description-image" src="{{ page.photo}}" alt="{{ page.photoDescription }}" />
+                        <h3 class="landing-description">{{ page.imageDescription }}</h3>
                     </div>
                 </main>
                 <footer class="page-footer">{% include footer.html %}</footer>
