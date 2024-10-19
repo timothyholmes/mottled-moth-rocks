@@ -4,6 +4,7 @@ title:  "2024 Goals"
 date:   2024-01-24 22:09:08 -0500
 categories: annual
 description: Looking ahead to the new year
+previewImage: /assets/images/2024-goals.png
 ---
 
 I spin my tires without a good plan. The past two years have been great for nurturing creativity in my personal life. I'm shooting for more of that this year, with wider focus than just working on music.
