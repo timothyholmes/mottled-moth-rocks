@@ -1,13 +1,10 @@
 ---
 layout: default
-title: Social
-permalink: /social/
+title: Contact
+permalink: /contact/
 ---
 
-Scrolling endlessly leaves me feeling listless. Instead I prefer to center my social media around activities I enjoy.
-
-I'm a big fan of Retro, a photo journaling app from [some of the Instagram OGs](https://techcrunch.com/2023/07/07/retro-is-a-deeply-personal-photo-journaling-app-for-close-friends/).
-
+* [Instagram](https://www.instagram.com/tmthyhlms/)
 * [Apple Music](https://music.apple.com/profile/timothyholmes)
 * [Goodreads, Book tracking](https://www.goodreads.com/user/show/103225612-timothy-holmes)
 * [Marathon, TV tracking](https://marathontv.app/profile/vMH3BJdBiNSaqkontO2Sb2Xunyd2)
