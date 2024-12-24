@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title:  "Guitar Gear"
+title:  "Quest for Tone"
 categories: creativity
 date:   2024-11-19 7:00:00 -0500
 description: Live rig
