@@ -21,8 +21,8 @@ In high school I played mostly in worship bands affiliated with a local Pentecos
 After walking away from the church scene, for various reasons unrelated to guitar, I started playing in DIY bands. After spending some time behind the drum kit, I started playing guitar in Drawback. I desperately wanted to combine my tonal history in this band using heavy distorted sounds along side crisp modulation to create a textured wall of sound. I achieved this by gain staging an Ol' Yeller overdrive and a Jekyll & Hyde OD/Distortion combo pedal. The drives ran into a MXR Analog Chorus, a DD-7 delay, and a Hall of Fame reverb. This was amplified by a Music Man HD-1, and an Orange Dark 4 x 12.
 
 <div class="image-row">
-    <img class="image-row-one-third" src="/assets/images/guitar-tone/drawback-amp.jpg" />
-    <img class="image-row-two-thirds" src="/assets/images/guitar-tone/drawback-pedalboard.jpg" />
+    <img class="image-row-one-third" src="/assets/images/guitar-tone/drawback-amp.JPG" />
+    <img class="image-row-two-thirds" src="/assets/images/guitar-tone/drawback-pedalboard.JPG" />
 </div>
 <!-- 
 <div class="media-container">
