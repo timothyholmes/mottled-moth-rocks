@@ -4,6 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
+* Email: contact@mottledmoth.rocks
 * [Instagram](https://www.instagram.com/tmthyhlms/)
 * [Apple Music](https://music.apple.com/profile/timothyholmes)
 * [Goodreads, Book tracking](https://www.goodreads.com/user/show/103225612-timothy-holmes)

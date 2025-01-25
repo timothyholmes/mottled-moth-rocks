@@ -19,6 +19,5 @@ Released March 8th, 2023.
 
 <div class="media-container">
     <iframe allow="autoplay *; encrypted-media *;" frameborder="0" width="100%" height="100%" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/in-search-of-something-ep/1676202018"></iframe>
-
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4xgEBLmylABgfc2AT0mMP5?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>

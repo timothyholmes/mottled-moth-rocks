@@ -312,3 +312,41 @@ code {
         color: #05240f;
     }
 }
+
+.image-row {
+    display: flex;
+    /* Align items in a row */
+    flex-wrap: nowrap;
+    /* Prevent wrapping to the next line */
+    width: 100%;
+    /* Ensure the row spans the full width of the container */
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.image-row .image-row-half {
+    width: 50%;
+    /* Each image takes 50% of the row's width */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Ensure the image fills its container without distortion */
+}
+
+.image-row .image-row-one-third {
+    width: 33%;
+    /* Each image takes 50% of the row's width */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Ensure the image fills its container without distortion */
+}
+
+.image-row .image-row-two-thirds {
+    width: 66%;
+    /* Each image takes 50% of the row's width */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Ensure the image fills its container without distortion */
+}
