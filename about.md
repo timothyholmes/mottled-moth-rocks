@@ -10,3 +10,6 @@ Mottled Moth is a pseudonym I use to publish music I write and record by myself.
 
 ![At the gardens](/assets/images/about.JPG "At the gardens")
 Chilling with the pyramid fountain at [Lewis Ginter Botanical Garden.](https://www.lewisginter.org)
+
+![Cosmic Strain by Josh Gilly](/assets/images/main/cs-double-exposure.jpg "Cosmic Strain by Josh Gilly")
+Photo by [Josh Gilly](https://www.instagram.com/joshgilly/)

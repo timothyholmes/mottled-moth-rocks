@@ -91,7 +91,7 @@ code {
 
 .page-header,
 .page-footer {
-    background-color: hsl(129, 40%, 10%);
+    /* background-color: hsl(129, 40%, 10%); */
     padding: 20px;
     text-align: center;
 }
