@@ -12,19 +12,23 @@ I spin my tires without a good plan. The past two years have been great for nurt
 1. ✅ 75 medium challenge January - March
 2. ✅ Upload Mottled Moth split with Matt
 3. ✅ Make a personal website, with a blog
-4. Winter / Spring by Mottled Moth
+4. ✅ Sweet Understanding by Mottled Moth
 5. ❌ Publish a photo zine
-6. Become a better chef
-    * ✅ Knife literacy
-    * ✅ Read a book on the topic
-    * Make stock
-    * Try 6 new recipes
-7. Take 4 hikes
+    * This just didn't make sense to prioritize as I started working through things
+6. ✅ Become a better chef
+7. 🟠 Take 4 hikes
 8. ✅ Visit 2 friends out of state 
-9. Learn a roller skating trick
-9. Complete a language course in Bulgarian.
+9. ❌ Learn a roller skating trick
+9. 🟠 Complete a language course in Bulgarian.
     * Starting out the year with 28% left on [Bulgaro.io](http://bulgaro.io)
-10. Fix a broken guitar
-11. Reading Bingo 2024
+10. ✅ Fix a broken guitar
+11. ✅ Reading Bingo 2024
 12. ✅ Try more new restaurants
-13. Make a garbage pickup system for walks
+13. ❌ Make a garbage pickup system for walks
+
+Key/Scoring
+* ✅ = Done, 2 points
+* 🟠 = Made good progress, 1 points
+* ❌ = Failed, 0 points
+
+76% completion rate, not bad but would like to improve in 2025.
