@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 title:  "2025 Goals"
-date:   2025-02-11 22:09:08 -0500
+date:   2025-02-12 22:09:08 -0500
 categories: annual
 description: Goals for the coming year
 previewImage: /assets/images/2025-02-12-annual-goals/citrus-small.png
@@ -15,7 +15,7 @@ previewImage: /assets/images/2025-02-12-annual-goals/citrus-small.png
 
 I completed a solid 76% of my goals in 2024. To improve this number, the best strategy is to lower the bar. You can always pull more projects in if you need, but setting a more reasonable expectation is an easy way to hit the mark when calling your shot.
 
-One thing I'm calling out ahead of time with some of my goals this is year is the reward I'll give myself when it's completed. I read a lot on building good feedback loops in the previous year, and something big I learned was how important rewards are reinforcing behavior.
+One thing I'm calling out ahead of time with some of my goals this is year is the reward I'll give myself when it's completed. I read a lot on building good feedback loops in the previous year, and something big I learned was how important rewards are for reinforcing behavior.
 
 1. 75 Medium Challenge
     * Forthcoming blog post describing this process, but this is essentially using the viral 75 Hard challenge as a jump off for more sustainable habit building.
