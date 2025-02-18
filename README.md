@@ -37,3 +37,15 @@ bundle exec jekyll serve --drafts
 gem install mdspell
 mdspell */**/*.md --config ./.mdspell.yml
 ```
+
+Remove analytics when running locally
+
+```
+sed -i '' 's|<script data-goatcounter="https://mottled-moth-rocks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>|<!-- <script data-goatcounter="https://mottled-moth-rocks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->|g' ./_layouts/*
+```
+
+Replace them before pushing
+
+```
+sed -i '' 's|<!-- <script data-goatcounter="https://mottled-moth-rocks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->|<script data-goatcounter="https://mottled-moth-rocks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>|g' ./_layouts/*
+```
