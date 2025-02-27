@@ -4,6 +4,7 @@ title:  "2025 Goals"
 date:   2025-02-12 22:09:08 -0500
 categories: annual
 description: Goals for the coming year
+permalink: /annual/2025/02/12/annual-goals.html
 previewImage: /assets/images/2025-02-12-annual-goals/citrus-small.png
 ---
 
@@ -13,7 +14,7 @@ previewImage: /assets/images/2025-02-12-annual-goals/citrus-small.png
         alt="Cirtus at the farmer's market in Florida" />
 </div>
 
-I completed a solid 76% of my goals in 2024. To improve this number, the best strategy is to lower the bar. You can always pull more projects in if you need, but setting a more reasonable expectation is an easy way to hit the mark when calling your shot.
+I completed a solid [76% of my goals in 2024](/annual/2024/01/24/annual-goals.html). To improve this number, the best strategy is to lower the bar. You can always pull more projects in if you need, but setting a more reasonable expectation is an easy way to hit the mark when calling your shot.
 
 One thing I'm calling out ahead of time with some of my goals this is year is the reward I'll give myself when it's completed. I read a lot on building good feedback loops in the previous year, and something big I learned was how important rewards are for reinforcing behavior.
 

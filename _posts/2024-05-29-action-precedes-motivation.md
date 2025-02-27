@@ -5,6 +5,7 @@ date:   2024-05-29 15:00:00 -0500
 categories: system
 description: Stay driven
 previewImage: /assets/images/waterfall-rocks-small.png
+permalink: /system/2024/05/29/action-precedes-motivation.html
 ---
 
 <div class="album-art">

@@ -4,6 +4,7 @@ title:  "Taking Notes"
 categories: system
 date:   2024-10-11 7:00:00 -0500
 description: Creating a written record
+permalink: /system/2024/10/11/taking-notes.html
 previewImage: /assets/images/taking-notes-small.png
 ---
 

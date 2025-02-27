@@ -4,6 +4,7 @@ title:  "Sweet Understanding"
 date:   2024-12-20 19:06:08 -0500
 categories: creativity project
 description: Guitar and synth driven 6 song
+permalink: /creativity/project/2024/12/20/sweet-understanding.html
 previewImage: /assets/images/sweet-understanding-square-small.png
 ---
 

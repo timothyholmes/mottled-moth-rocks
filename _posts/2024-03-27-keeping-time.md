@@ -5,6 +5,7 @@ date:   2024-03-27 15:00:00 -0500
 categories: system
 description: Time travelling with a purpose
 previewImage: /assets/images/keeping-time-small.png
+permalink: /system/2024/03/27/keeping-time.html
 ---
 
 <div class="album-art">

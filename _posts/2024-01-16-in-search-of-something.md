@@ -5,6 +5,7 @@ date:   2024-01-16 20:55:08 -0500
 tags: creativity project
 description: Inaugural release from Mottled Moth
 previewImage: /assets/images/isos_small.png
+permalink: /2024/01/16/in-search-of-something.html
 ---
 
 This is my first release as Mottled Moth. I did all of the songwriting, recording, and post production over the course of a few years. The most fruitful part of the experience was learning the ins and outs of post production. I've tried my hand at recording for years, tracking DIY punk and emo bands in college, but I had yet to take the time for learning proper approach to compression, equalization, etc. This was a fun first pass at applying those techniques.

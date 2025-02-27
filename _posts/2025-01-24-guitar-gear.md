@@ -4,6 +4,7 @@ title:  "Quest for Tone"
 categories: creativity
 date:   2025-01-24 7:00:00 -0500
 description: Strategies for sound
+permalink: /creativity/2025/01/24/guitar-gear.html
 previewImage: /assets/images/guitar-rig-preview.png
 ---
 
@@ -24,11 +25,6 @@ After walking away from the church scene, for various reasons unrelated to guita
     <img class="image-row-one-third" src="/assets/images/guitar-tone/drawback-amp.JPG" />
     <img class="image-row-two-thirds" src="/assets/images/guitar-tone/drawback-pedalboard.JPG" />
 </div>
-<!-- 
-<div class="media-container">
-    <iframe allow="autoplay *; encrypted-media *;" frameborder="0" width="100%" height="100%" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/to-live-honestly-ep/1705799549"></iframe>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2B6ZYf12qwoMCnq1PtnFqQ?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div> -->
 
 ## Mottled Moth
 

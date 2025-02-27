@@ -5,6 +5,7 @@ date:   2024-01-17 19:06:08 -0500
 categories: creativity project
 description: A split release with the prince of shoegaze
 previewImage: /assets/images/split_small.png
+permalink: /creativity/project/2024/01/17/cosmic-strain-split.html
 ---
 
 Last summer, Matt and I kicked around the idea of doing a split release for some songs that we'd been writing. We worked on them in our respective apartments over the back half of 2023, and I'm quite pleased with the results. Matt's songwriting chops typically blow me away, and his latest effort as Cosmic Strain is no different. The album art is two stacked polaroids taken at my wedding.

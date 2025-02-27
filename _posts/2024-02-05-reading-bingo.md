@@ -5,6 +5,7 @@ date:   2024-02-05 19:00:00 -0500
 categories: lore
 description: A competition for elite bibliophiles
 previewImage: /assets/images/books.png
+permalink: /lore/2024/02/05/reading-bingo.html
 ---
 
 [Download boards here](/assets/docs/reading-bingo-2024.pdf "Download boards here")

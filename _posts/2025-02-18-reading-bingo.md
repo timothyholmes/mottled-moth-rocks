@@ -4,12 +4,13 @@ title:  "Reading Bingo 2025"
 date:   2025-02-18 16:09:08 -0500
 categories: lore
 description: This year's bibliophile challenge
+permalink: /lore/2025/02/18/reading-bingo.html
 previewImage: /assets/images/2025-02-17-reading-bingo/shelf-life-cat.png
 ---
 
 [Download boards here](/assets/docs/reading-bingo-2025.pdf "Download boards here")
 
-Last year's Reading Bingo was a success! I play with two leagues, one for my wife's family and one for my own. This year Dzhuliyana brought home the hardware for the former, and my sister-in-law Hanna won gold in the latter.
+[Last year's Reading Bingo](/lore/2024/02/05/reading-bingo.html) was a success! I play with two leagues, one for my wife's family and one for my own. This year Dzhuliyana brought home the hardware for the former, and my sister-in-law Hanna won gold in the latter.
 
 <div class="album-art">
     <img 
