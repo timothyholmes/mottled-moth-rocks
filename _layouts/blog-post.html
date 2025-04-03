@@ -19,7 +19,8 @@
         <section>
             <div class="content">
                 <main class="page-body">
-                    <h2>{{ page.title }}</h2>
+                    <h1 class="blog-title">{{ page.title }}</h1>
+                    <h5 class="blog-date">{{ page.date | date: "%-d %B %Y"}}</h5>
                     {{ content }}
                 </main>
                 <footer class="page-footer">{% include footer.html %}</footer>
