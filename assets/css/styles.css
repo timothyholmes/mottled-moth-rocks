@@ -75,7 +75,7 @@ code {
     font-style: italic;
     font-weight: 900;
     text-align: center;
-    font-size: 4em;
+    font-size: 6em;
 }
 
 .content {
@@ -149,6 +149,10 @@ code {
 
 .description-image-container {
     max-width: 75%;
+}
+
+.description-image {
+    padding-top: 2em;
 }
 
 .nav-bar {
