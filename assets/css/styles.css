@@ -32,8 +32,9 @@ a {
     color: #faf3d4;
 }
 
-section {
-    /* height: 100%; */
+h2 {
+    line-height: 0.8em;
+    font-weight: 700;
 }
 
 nav > a {
@@ -60,6 +61,47 @@ code {
     padding: 1px 5px;
 }
 
+.nav-item {
+    border: 2px solid black;
+    box-shadow: 10px 4px 0px rgb(177, 162, 128);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    color: black;
+    background-color: #f5ebd3;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-item:hover {
+    animation: colorChange 2s infinite;
+    box-shadow: none;
+    color: white;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: orange;
+    }
+
+    50% {
+        background-color: yellow;
+        color: black;
+    }
+
+    75% {
+        background-color: magenta;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
 .language-javascript {
     max-width: 100%;
 }
@@ -69,6 +111,7 @@ code {
     text-align: center;
     font-style: italic;
     text-decoration: none;
+    line-height: 0.4;
 }
 
 .landing-description {
@@ -141,6 +184,7 @@ code {
 .blog-title {
     margin-bottom: -.5em;
     font-size: 2.5em;
+    font-weight: 800;
 }
 
 .blog-date {
@@ -152,7 +196,7 @@ code {
 }
 
 .description-image {
-    padding-top: 2em;
+    padding-top: 4em;
 }
 
 .nav-bar {
@@ -220,6 +264,7 @@ code {
         font-style: italic;
         text-align: center;
         font-size: 2em;
+        line-height: 0.7;
     }
 }
 
@@ -247,6 +292,7 @@ code {
         font-style: italic;
         text-align: center;
         font-size: 2em;
+        line-height: 0.7;
     }
 }
 
@@ -273,7 +319,8 @@ code {
     .landing-description {
         font-style: italic;
         text-align: center;
-        font-size: 2em;
+        font-size: 2.5em;
+        line-height: 0.7;
     }
 }
 
@@ -291,7 +338,8 @@ code {
     .landing-description {
         font-style: italic;
         text-align: center;
-        font-size: 2em;
+        font-size: 2.5em;
+        line-height: 0.7;
     }
 
     .content {
@@ -315,6 +363,11 @@ code {
 
     a {
         color: #05240f;
+    }
+
+    .nav-item {
+        border: 2px solid black;
+        box-shadow: 10px 4px 0px rgba(0, 0, 0, 1);
     }
 
     .page-header,

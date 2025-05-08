@@ -6,6 +6,11 @@ permalink: /contact/
 
 * Email: contact@mottledmoth.rocks
 
+## Music
+
+* [Cosmic Strain](https://cosmicstrain.band)
+* [Bandcamp](https://mottledmoth.bandcamp.com)
+
 ## Photos
 * [Instagram](https://www.instagram.com/tmthyhlms/)
 * Retro App - @timholmes
