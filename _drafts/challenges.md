@@ -1,14 +1,12 @@
 ---
 layout: blog-post
 title:  "Challenges"
-date:   2025-04-16 16:09:08 -0500
+date:   2025-05-07 16:09:08 -0500
 categories: system
 description: Time based 
-permalink: /lore/2025/02/18/reading-bingo.html
-previewImage: /assets/images/2025-02-17-reading-bingo/shelf-life-cat.png
+permalink: /system/2025/05/07/reading-bingo.html
+previewImage: /assets/images/2025-05-07-challenges/waterfall-small.png
 ---
-
-1. [The Path](/system/2024/02/02/the-path.html)
 
 ## Inspiration
 
@@ -25,16 +23,29 @@ This year my list of activites was:
 * don't get drunk
 * don't smoke weed
 
+This got me thinking about how a general challenge framework would look in the context of my [routine system.](/system/2024/03/27/keeping-time.html) I've noticed that focusing on daily routines typically increases how well I lock into tasks overall. One of my most productive times of the year is generally when we try our 75 day challenge. Since the challenge offers a bit of novelity and a nearby target, it draws my attention to it. Having an accountability partner also helps. 
+
 <!-- <div style="position: relative;overflow: hidden;width: 100%;max-width:600px;margin:0 auto;padding-top: 56%;"><iframe src="https://clip.cafe/e/702453" style="position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 60%;"></iframe></div> -->
 
-## Inspiration
+## Software
+
+I enjoy building small tools to reduce the friction of using productivity tools. For this, I used Reminders, Shortcuts, and Data Jar.
+
+To start a challenge, I use an easily accesbile menu via shortcuts. The challenge needs a name, an end date, and then will provide a list of all items that are on my daily routine list, and the user can select N number of reminders to be marked for the current session.
+
+Each day an automation runs the builds a list of daily routines based on the list stored in data jar. I add a tag for challenge, and then have a challenge smart list in my reminders app to know which routines I need to ensure I complete. At the end of the day, the score is calculated based on the pattern above (2 points for all complete, 1 for some, 0 for none) and then saved to Data Jar. This score accumulates for the duration of the challenge.
+
+At the end of the challenge, a summary for the challenge, including the name, score, and duration of days, is written to Notes in a folder for logs.
+
+## Impact
+
+This year my challenge went well.
 
 <!-- 
     @TODO
     * Add photos for evidence of crimes
     * Add summary of this year's challenge
     * Section on generalized challenges
-    * Shortcuts + DataJar + Reminders
     * Photos for thumbnail
     * Add description
  -->
