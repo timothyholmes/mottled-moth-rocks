@@ -82,10 +82,12 @@ code {
 @keyframes colorChange {
     0% {
         background-color: red;
+        color: white;
     }
 
     25% {
         background-color: orange;
+        color: white;
     }
 
     50% {
@@ -95,10 +97,12 @@ code {
 
     75% {
         background-color: magenta;
+        color: white;
     }
 
     100% {
         background-color: red;
+        color: white;
     }
 }
 

@@ -4,7 +4,7 @@ title:  "Challenges"
 date:   2025-05-07 16:09:08 -0500
 categories: system
 description: Time based 
-permalink: /system/2025/05/07/reading-bingo.html
+permalink: /system/2025/05/07/challenges.html
 previewImage: /assets/images/2025-05-07-challenges/waterfall-small.png
 ---
 

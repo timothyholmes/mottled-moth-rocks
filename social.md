@@ -9,7 +9,9 @@ permalink: /contact/
 ## Music
 
 * [Cosmic Strain](https://cosmicstrain.band)
-* [Bandcamp](https://mottledmoth.bandcamp.com)
+* Mottled Moth
+    * [Apple Music](https://music.apple.com/us/artist/mottled-moth/1676174043)
+    * [Spotify](https://open.spotify.com/artist/4Z66mNRJBXz9HFVFtUqu0I)
 
 ## Photos
 * [Instagram](https://www.instagram.com/tmthyhlms/)
@@ -17,9 +19,8 @@ permalink: /contact/
 
 ## Media
 * [Apple Music](https://music.apple.com/profile/timothyholmes)
-* [Goodreads, Book tracking](https://www.goodreads.com/user/show/103225612-timothy-holmes)
-* [Marathon, TV tracking](https://marathontv.app/profile/vMH3BJdBiNSaqkontO2Sb2Xunyd2)
-* [Letterboxd, Movie tracking](https://boxd.it/18njB)
+* [Goodreads, Books](https://www.goodreads.com/user/show/103225612-timothy-holmes)
+* [Letterboxd, Movies](https://boxd.it/18njB)
 
 ## Hobbies
 * [Chess.com](https://www.chess.com/member/mottledmoth)
