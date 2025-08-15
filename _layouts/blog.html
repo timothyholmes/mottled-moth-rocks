@@ -19,9 +19,8 @@
     <section>
         <div class="content">
             <main class="page-body">
-                <h1 class="blog-title">Posts</h1>
                 <ul class="blog-list">
-                    {% for post in site.posts %}
+                    {% for post in paginator.posts %}
                     <li>
                     <section class="blog-post-preview">
                         {% if post.previewImage %}
@@ -43,6 +42,18 @@
                     </li>
                     {% endfor %}
                 </ul>
+
+                <div class="pagination nav-bar">
+                    {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path }}" class="previous nav-item">&laquo; Previous</a>
+                    {% endif %}
+                
+                    <span class="page_number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+                
+                    {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path }}" class="next nav-item">Next &raquo;</a>
+                    {% endif %}
+                </div>
             </main>
             <footer class="page-footer">{% include footer.html %}</footer>
         </div>

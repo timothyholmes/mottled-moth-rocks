@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-* Email: contact@mottledmoth.rocks
+Email: contact@mottledmoth.rocks
 
 ## Music
 

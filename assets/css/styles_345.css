@@ -79,6 +79,15 @@ code {
     color: white;
 }
 
+.no-hover {
+    box-shadow: none;
+}
+
+.no-hover:hover {
+    animation: none;
+    color: black;
+}
+
 @keyframes colorChange {
     0% {
         background-color: red;
@@ -127,25 +136,22 @@ code {
 
 .content {
     min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
     font-size: 1.3em;
 }
 
 .page-header,
 .page-footer {
-    /* background-color: hsl(129, 40%, 10%); */
     padding: 20px;
     text-align: center;
 }
 
 .page-body {
     padding-bottom: 5%;
+    margin-top: 3em;
 }
 
 .page-body .blog-list {
     margin-left: -1.5em;
-    margin-top: 2em;
     list-style-type: none;
 }
 
@@ -190,7 +196,7 @@ code {
 }
 
 .description-image {
-    padding-top: 4em;
+    /* padding-top: 4em; */
 }
 
 .nav-bar {
@@ -364,6 +370,15 @@ code {
         box-shadow: 10px 4px 0px rgba(0, 0, 0, 1);
     }
 
+    .no-hover {
+        box-shadow: none;
+    }
+
+    .no-hover:hover {
+        animation: none;
+        color: black;
+    }
+
     .page-header,
     .page-footer {
         background-color: #e0cfa6;
@@ -410,4 +425,9 @@ code {
     /* Maintain aspect ratio */
     object-fit: cover;
     /* Ensure the image fills its container without distortion */
+}
+
+.page_number {
+    padding-left: 30px;
+    padding-right: 30px;
 }
