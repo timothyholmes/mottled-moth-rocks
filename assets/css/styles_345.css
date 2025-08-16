@@ -195,10 +195,6 @@ code {
     max-width: 75%;
 }
 
-.description-image {
-    /* padding-top: 4em; */
-}
-
 .nav-bar {
     text-align: center;
 }
@@ -430,4 +426,15 @@ code {
 .page_number {
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.link-list {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.caption {
+    font-size: .75em;
+    font-style: italic;
+    text-align: center;
 }

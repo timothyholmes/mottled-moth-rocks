@@ -8,16 +8,15 @@ permalink: /2025-07-24/decade-of-software.html
 previewImage: /assets/images/2025-07-24-decade-of-software/meatball.jpg
 ---
 
-<!-- 
-@TODO
-* Find starchase picture
-* Find a Capital One picture
-* Find some pic for meet group 
--->
-
 ## Internship
 
 It's hard to believe I've been building software for a decade. I left college with a tenuous at best grasp on how to program, spending most of my time honing skills that ultimately did not interest me. Outside of a few odd jobs, I didn't get any experience on the web until my first internship.
+
+<div class="image-row">
+    <img src="/assets/images/2025-07-24-decade-of-software/starchase.jpg" />
+</div>
+
+<section class="caption">Coffee</section>
 
 I worked at a fledging company that was building tools for safer policing. After getting manufacturing off the ground for their hardware product, they brought a lone software development intern on board to develope POCs for their real time tracking software. I worked in a small windowless room that held a few shelves of electronic components and my desk. I had a trusty dell laptop with an external monitor, a box full of GPS units, and a coffee cup.
 
@@ -29,6 +28,8 @@ My web skills at the time were limited to HTML, CSS, and a bit of PHP. There was
     <img src="/assets/images/2025-07-24-decade-of-software/timatdesk.jpg" />
 </div>
 
+<section class="caption">A day at the office</section>
+
 I got my next job after graduating at a medium sized operation downtown. It was an entry level software developer positionn the frontend team of a real estate website. I joined my buddy Corey on the team and we cranked out the first version of a complete rewrite of the site, from a ColdFusion stack to an AngularJS frontend that targeted a NodeJS backend. The end result was a modern looking site that was significantly faster to load. The opportunity arose at the end of this project to try out backend programming, something I was growing more interested in at the time, so I gave it a shot.
 
 Backend programming is in my opinion where the heart of a modern application lives. All the business logic is here, the data that makes each experience personal, and it orchestrates the events required for a good experience to feel like magic. The existing backend devs were sharp as tacks, so I soaked up all the game I could from them. We built a solid micro-service architecture to power the site and mobile apps.... 
@@ -39,17 +40,19 @@ I made a ton of friends at this job. Our happy hours were the stuff of legend, a
     <img src="/assets/images/2025-07-24-decade-of-software/friends.jpg" />
 </div>
 
+<section class="caption">Me, Mike, Tucker, Eugene</section>
+
 This was also my first experience with remote work, as I split my time between Norfolk and Richmond near the end of my tenure. This was one of the main reasons I started looking for something local to Richmond, as I had yet to develop the time management skills needed to be productive remotely.
 
 ## Big Business
 
 I wanted to try something new after a few years into my first role, so I joined one of the local big-corps that was position themselves as a tech-first organization. My team was a small scrum team nestled in the typical corproate structure within a larger department, which rolled up to a line of business helmed by an executive, which rolled up to... the picture paints itself.
 
-This job was pretty non-invasive to my life in a wonderful way. It was very 9 to 5 oriented, aside from the occasional late night deployment. The work life balance was ultimately my favorite part, I went on a ton of walks during my lunches and read plenty of books as I enjoyed salad or pizza from the cafeteria. 
-
-The tech role was similar fare to my previous. I made a lot of NodeJS services with Hapi, maintained a handful of legacy projects in tech stacks with which I had no experience, and made the occassional foray into our frontend Vue code. The platform was geared towards internal users, so the scale was considerably less than my previous role which was consumer facing. In turn, we had no real need to setup anything particularly complex for the vast majority of our use cases and after a while I felt like I was growing stagnant with my skills.
+This job was pretty non-invasive to my life in a wonderful way. It was very 9 to 5 oriented, aside from the occasional late night deployment. The work life balance was ultimately my favorite part, I went on a ton of walks during my lunches and read plenty of books as I enjoyed salad or pizza from the cafeteria.
 
 My team at this job rocked, and we had a lot of fun together. Many of us played music so a few nights saw us in a garage with a few guitars and a drum kit. We went on a few trips together to visit different offices and always had a good time. 
+
+The tech role was similar fare to my previous. I made a lot of NodeJS services with Hapi, maintained a handful of legacy projects in tech stacks with which I had no experience, and made the occassional foray into our frontend Vue code. The platform was geared towards internal users, so the scale was considerably less than my previous role which was consumer facing. In turn, we had no real need to setup anything particularly complex for the vast majority of our use cases and after a while I felt like I was growing stagnant with my skills.
 
 <div class="image-row">
     <img class="image-row-one-third" src="/assets/images/2025-07-24-decade-of-software/cafe.jpeg" />
@@ -57,19 +60,37 @@ My team at this job rocked, and we had a lot of fun together. Many of us played 
     <img class="image-row-one-third" src="/assets/images/2025-07-24-decade-of-software/path.jpeg" />
 </div>
 
+<section class="caption">Life in big tech</section>
+
 During my time here I volunteered with [Microsoft's TEALS](https://www.microsoft.com/en-us/teals) program through [CodeVA](https://codevirginia.org). I partnered with 2 other software developers and we taught a basic programming course to a high school in Virginia. We spent a semester going through the building blocks of programming: variables, boolean logic, conditionals, etc. with a visual language called SNAP. We taught our classes remotely, but a few times we made the drive out to the county to participate in the classroom. I tried my best to encourage those that were really interested to try their hand at programming, and framed things as best I could as to how it would relate to their interests. Near the end of our time together, we organized a field trip to our office and showed them what a day in the life of a dev looks like.
 
-<!-- 
-1. TEALs teaching
-2. Coders
-3. tech stack
-4. understanding business focus
- -->
+This experience translated nicely when the pandemic forced us all to go remote in 2020. There was an internal group that focused on outreach to local schools, so the TEALS volunteers paired up with them to build an HTML/CSS course aimed at middle schoolers for employee's kids that were stuck at home. We taught he course a few times, using interactive web editors to build simple websites together. I enjoyed seeing the youth get excited over building pages for their favorite music or sports team with simple tools, the ones that would be recognizable to a generation of programmers who typed their first line of code into the Myspace profile.
 
- ## Live
+I saw really great leadership here. Our team lead positioned each person on an path to grow their skills in a way that aligned with their goals and complimented their niche on the team. My biggest failure here was ultimately not being able to connect the work we were doing with the purpose of the business. I wanted a job that was focused on building technology that was the star of a business, rather than powering things peripheral to their purpose. I moved to Philadelphia around this time, so I looked for tech companies in a new market.
 
- <!-- 
- 1. tech
- 2. remote first / global
- 3. leadership
-  -->
+## Live
+
+A few months into my life in Philly, I accepted an offer for a Senior Developer role at a local social media outfit. The main product was a suite of consumer facing dating and social apps, along with a live streaming video platform. I was placed on a scrum team focused on building features out for the live video community. The technology stack was reasonable but had grown in complexity over time as new products launched and performance bottlenecks were patched. I relished being able to dive into the codebase so that I could learn about the savvy scaling solutions the teams had implemented, and how the design of such systems works in practical settings.
+
+I spent a few years being a dev on this system and shipped quite a few features. The most interesting aspect of this time was hitting scaling bottlenecks on certain services. One of my first project was to build out a microservice that would return documents to users with specific targeting based on their location, language, profile settings, etc. When it initally launched, the users' requests were served in 100ms at best, a few seconds at worst, with ECS tasks in the double digits. This feature was used on our landing page, and degraded the load time of the entire site when it was performing poorly. I used a few different caching strategies to remedy the response time, my favorite piece was a memory cache synchronized across all the instances in the tier that refreshed itself whenever a write event occurred. This greatly reduced the time it took for a user's search, and further memory caching for evaluations brought the average response time down to 10ms with 2 ECS tasks. Implementing this fine tuning to performance was incredibly satisfying, and I was glad that someone cared enough about our technical performance to allow me to do that work. It has not spiked past 15ms in over 3 years. 
+
+Time moved on. We shipped plenty of features together, patched bugs, and handled getting things stable when something blew up. It's no secret that tech has not had the best few years, and a lot of the faces have changed through new roles and layoffs alike. My team has two original members, myself included. I've been leading the team for a little over a year and half and I enjoy it. I've had a lot of bosses and I've long held opinions on things that worked and what didn't work; this is my chance to take my shot at doing it right. I do my best to be honest and allow my team to do what they need to do without any micromanagement. There are areas I know I can improve in, and I'm excited to get better at it.
+
+I focus less on developing features with my code nowadays and more on things that need to be done to steer our projects in the right direction. It's an interesting mindset shift, and I find joy in being able to help my teammates directly with my efforts rather than working on code in isolation. My peers and I guide the architecture of the platform as new things are added, which presents challenges that require a good mental model and technical understanding to address. The things we have to figure out are genuinely fun to untangle.
+
+<div class="image-row">
+    <img class="image-row-half" src="/assets/images/2025-07-24-decade-of-software/window.jpeg" />
+    <img class="image-row-half" src="/assets/images/2025-07-24-decade-of-software/neon.jpeg" />
+</div>
+
+<section class="caption">Some of my office configurations</section>
+
+I've worked remotely my entire time here, my longest tenured job in the industry. I had to do some serious soul searching to be productive in a self-managed environment. The strategies I developed during this time are documented in my series [The Path](/system/2024/02/02/the-path.html). It's wonderful not having a commute, and I love the flexibility of being able to adjust my working hours as needed to accomodate things I need to do in my daily life. Our team is distributed all over the globe, allowing us to connect with people who have different cultures and viewpoints reduces our blindspots when building apps for a global audience. 
+
+## Future
+
+As I write this, I have an AI agent open in my text editor. We're in a strange time now, when every talking head in tech is sounding the alarm that junior engineers are being replaced with AI agents. After working with AI for some time, I am confident in saying that it's a fallacy to believe that any agent on the market can replace a software developer without oversight. But if productivity gains provided reduce the need for and raise the bar of what it means to be a junior dev, I worry for the large swaths of folks entering tech based on the 2010s promise of guranteed employement and good salaries. I certainly wonder if I'd have been able to make the cut long enough to aquire the skills I did in my junior roles that've allowed me to be productive further down the road.
+
+Companies are also laying people off in huge numbers, due to overhiring during the pandemic, fear in the global stock market, and [tax changes](https://qz.com/tech-layoffs-tax-code-trump-section-174-microsoft-meta-1851783502) to name a few. The atmosphere around software development is starkly bleak compared to the preceding era of sunshine and rainbows, powered by low interest rates and VCs with seemingly endless cash. One has to have hope that the pendulum will swing back in the other direction at some point, but it's hard to know if this is just another bubble pop that tech must ride out or if something more seismic is at play.
+
+For me the internet has been a great place for developing skills, making a living, and connecting with people. I'm grateful that I have been able to participate in building some of the web. I look forward to the next decade.
