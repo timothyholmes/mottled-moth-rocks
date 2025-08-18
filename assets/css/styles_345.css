@@ -115,6 +115,28 @@ code {
     }
 }
 
+@keyframes textColorChange {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: orange;
+    }
+
+    50% {
+        color: yellow;
+    }
+
+    75% {
+        color: magenta;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
 .language-javascript {
     max-width: 100%;
 }
@@ -125,6 +147,10 @@ code {
     font-style: italic;
     text-decoration: none;
     line-height: 0.4;
+}
+
+.header-text:hover {
+    animation: textColorChange 2s infinite;
 }
 
 .landing-description {
@@ -189,6 +215,7 @@ code {
 
 .blog-date {
     font-style: italic;
+    margin-top: -1em;
 }
 
 .description-image-container {
@@ -437,4 +464,8 @@ code {
     font-size: .75em;
     font-style: italic;
     text-align: center;
+}
+
+.blog-description {
+    font-style: italic;
 }
