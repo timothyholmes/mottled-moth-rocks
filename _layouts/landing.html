@@ -5,11 +5,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,800;0,900;1,100;1,300;1,400;1,700;1,800;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
             rel="stylesheet">
         <meta charset="utf-8">
         <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/assets/css/styles_345.css">
+        <link rel="stylesheet" href="/assets/css/base.css">
+        <link rel="stylesheet" href="/assets/css/layout.css">
+        <link rel="stylesheet" href="/assets/css/components.css">
+        <link rel="stylesheet" href="/assets/css/animations.css">
+        <link rel="stylesheet" href="/assets/css/responsive.css">
 
         <script data-goatcounter="https://mottled-moth-rocks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     </head>
@@ -19,34 +23,49 @@
         <section>
             <div class="content">
                 <main class="page-body">
-                    <!-- <h2>{{ page.title }}</h2> -->
-                    <!-- <div class="description-container">
-                        <span class="description-text">
-                            {{ content }}
+                    <div>
+                        <p class="tagline">A blog about playing guitar, programming, and finding purpose.</p>
 
-                            <h2 class="latest-posts">Latest Posts</h2>
+                        <section class="landing-section">
+                            <h2 class="landing-section-heading">Latest Post</h2>
+                            {% for post in site.posts limit:1 %}
+                            <a href="{{ post.url }}">
+                                <div class="landing-card">
+                                    {{ post.title }}</br>
+                                    <span class="landing-card-subtitle">{{ post.description}}</span>
+                                </div>
+                            </a>
+                            {% endfor %}
+                        </section>
 
-                            <ul class="blog-list">
-                                {% for post in site.posts limit:2 %}
-                                <section class="blog-post-preview-text">
-                                    <h3><a class="blog-post-title" href="{{ post.url }}">{{ post.title }}</a></h3>
-                                    <span><a class="blog-date" href="{{ post.url }}">{{ post.date | date: "%B, %-d %Y" }}</a><br></span>
-                                    <span><a class="blog-post-title" href="{{ post.url }}">{{ post.description }}</a></span>
-                                </section>
-                                {% endfor %}
-                            </ul>
-                        </span>
-                        <span class="description-image-container">
-                            <img class="description-image" src="{{ page.photo}}" alt="{{ page.photoDescription }}" />
-                        </span> -->
-                        
-                        <div class="description-image" >
-                            <img src="{{ page.photo}}" alt="{{ page.photoDescription }}" />
-                        </div>
-                        <h3 class="landing-description">{{ page.imageDescription }}</h3>
-                        <section class="provider-icon-container">
-                            <a class="provider-icon" href="https://open.spotify.com/album/6yd3JfzopYrtIFCRxCXqwk?si=mdDbTHSCQv-aqYAdI92nnA"><img src="/assets/images/Spotify_icon.svg" /></a>
-                            <a class="provider-icon" href="https://music.apple.com/us/album/sweet-understanding-ep/1786853620"><img src="/assets/images/Apple_Music_icon.svg.png" /></a>
+                        <section class="landing-section">
+                            <h2 class="landing-section-heading">Latest Releases</h2>
+                            <a href="/creativity/project/2024/12/20/sweet-understanding.html">
+                                <div class="landing-card">
+                                    Sweet Understanding</br>
+                                    <span class="landing-card-subtitle">Mottled Moth</span>
+                                </div>
+                            </a>
+                            <a href="/creativity/project/2025/07/16/sarcoma.html">
+                                <div class="landing-card">
+                                    Sarcoma</br>
+                                    <span class="landing-card-subtitle">Cosmic Strain</span>
+                                </div>
+                            </a>
+                        </section>
+
+                        <section class="landing-section">
+                            <div class="image-row">
+                                <img class="image-row-two-thirds" src="/assets/images/about.JPG"
+                                    alt="Chilling with the pyramid fountain at Lewis Ginter Botanical Garden" />
+                                <img class="image-row-one-third" src="/assets/images/main/cs-double-exposure.jpg"
+                                    alt="Cosmic Strain by Josh Gilly" />
+                            </div>
+
+                            <div class="caption">
+                                Pyramid fountain at <a href="https://www.lewisginter.org">Lewis Ginter Botanical Garden.</a> 
+                                +
+                                Cosmic Strain by <a href="https://www.instagram.com/joshgilly/">Josh Gilliland</a></div>
                         </section>
                     </div>
                 </main>

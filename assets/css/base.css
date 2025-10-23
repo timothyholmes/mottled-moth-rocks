@@ -1,0 +1,60 @@
+/* Base Styles - Typography, HTML Elements, and Core Resets */
+
+html {
+    font-family: "Merriweather", sans-serif !important;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+body {
+    height: 100%;
+    background-color: #102116;
+    color: #f5ebd3;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #faf3d4;
+}
+
+h2 {
+    line-height: 0.8em;
+    font-weight: 700;
+}
+
+blockquote {
+    font-style: italic;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #e0d9ba;
+}
+
+hr {
+    border: .02em solid #f5ebd3;
+    opacity: .7;
+}
+
+pre,
+code {
+    font-size: 1em;
+    border: 1px solid #202120;
+    border-radius: 10px;
+    background-color: #202120;
+    padding: 1em;
+    overflow-x: auto;
+}
+
+code {
+    padding: 1px 5px;
+}

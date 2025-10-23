@@ -1,0 +1,34 @@
+/* Layout Styles - Page Structure and Containers */
+
+.content {
+    min-height: 100%;
+    font-size: 1.3em;
+}
+
+.page-header,
+.page-footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.page-body {
+    padding-bottom: 5%;
+    margin-top: 3em;
+}
+
+.header-text {
+    font-weight: 1200;
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
+    line-height: 0.7;
+}
+
+.nav-bar {
+    text-align: center;
+}
+
+nav > a {
+    font-size: 1.3em;
+    padding-right: 4%;
+}

@@ -18,4 +18,4 @@ permalink: /contact/
 </section>
 
 ![Flowers at Maymont](/assets/images/flowers-at-maymont.JPG "Flowers at Maymont")
-Flowers at [Maymont.](https://en.wikipedia.org/wiki/Maymont)
+<div class="caption">Flowers at <a href="https://en.wikipedia.org/wiki/Maymont">Maymont.</a>
