@@ -144,19 +144,37 @@
 @media (prefers-color-scheme: light) {
     body {
         height: 100%;
-        background-color: #f5ebd3;
-        color: #05240f;
+        background-color: #eaecf6;
+        color: #021174;
         padding: 0;
         margin: 0;
     }
 
     a {
-        color: #05240f;
+        color: #021174;
+    }
+
+    .landing-card {
+        background-color: #081253;
+        color: #eaecf6;
+    }
+
+    .landing-card-subtitle {
+        color: #eaecf6;
     }
 
     .nav-item {
         border: 2px solid black;
-        box-shadow: 10px 4px 0px rgba(0, 0, 0, 1);
+        box-shadow: 10px 4px 0px #021174;
+        background-color: #eaecf6;
+        color: #021174;
+    }
+
+    .nav-item:hover {
+        animation: none;
+        color: #eaecf6;
+        background-color: #021174;
+        border: 2px solid #021174;
     }
 
     .no-hover {
@@ -169,10 +187,10 @@
     }
 
     .blog-date {
-        color: #05240f;
+        color: #021174;
     }
 
     blockquote {
-        color: #05240f;
+        color: #021174;
     }
 }
