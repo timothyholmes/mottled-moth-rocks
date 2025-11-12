@@ -8,8 +8,6 @@ previewImage: /assets/images/books.png
 permalink: /lore/2024/02/05/reading-bingo.html
 ---
 
-[Download boards here](/assets/docs/reading-bingo-2024.pdf "Download boards here")
-
 <div class="album-art">
     <img src="/assets/images/reading-bingo-2024.png" alt="Reading Bingo Board" />
 </div>
@@ -30,3 +28,5 @@ Last year’s champion was my lovely wife, with a whopping 26 points. For her st
 <div class="album-art">
     <img src="/assets/images/books-large.png" alt="Stacks of books in Norfolk, VA" />
 </div>
+
+[Download boards here](/assets/docs/reading-bingo-2024.pdf "Download boards here")

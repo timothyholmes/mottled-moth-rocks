@@ -1,6 +1,6 @@
 /* Responsive Styles - Media Queries */
 
-@media (max-width: 850px) {
+@media (min-width: 400px) {
     nav > a {
         font-size: 1em;
         padding-right: 4%;
@@ -191,6 +191,11 @@
     }
 
     blockquote {
+        color: #021174;
+    }
+
+    /* Drop cap color for light mode */
+    .page-body > p:first-of-type::first-letter {
         color: #021174;
     }
 }

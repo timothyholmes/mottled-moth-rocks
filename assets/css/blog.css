@@ -52,3 +52,14 @@
 .footnotes {
     font-size: 0.75em;
 }
+
+/* Drop cap - first letter of first paragraph in blog posts */
+.page-body > p:first-of-type::first-letter {
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 0.9;
+    float: left;
+    margin-right: 0.1em;
+    margin-top: 0.05em;
+    color: #b1a280;
+}
