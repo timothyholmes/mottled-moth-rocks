@@ -40,9 +40,9 @@
                         </section>
                         {% endif %}
                         <section class="blog-post-preview-text">
-                            <h3><a class="blog-post-title" href="{{ post.url }}">{{ post.title }}</a></h3>
-                            <span><a class="blog-date" href="{{ post.url }}">{{ post.date | date: "%B, %-d %Y" }}</a><br></span>
-                            <span><a class="blog-post-title" href="{{ post.url }}">{{ post.description }}</a></span>
+                            <span><a class="blog-post-title" href="{{ post.url }}">{{ post.title }}</a></span><br>
+                            <span><a class="blog-date" href="{{ post.url }}">{{ post.date | date: "%B, %-d %Y" }}</a></span><br>
+                            <span><a class="blog-post-description" href="{{ post.url }}">{{ post.description }}</a></span>
                         </section>
                     </section>
                     </li>

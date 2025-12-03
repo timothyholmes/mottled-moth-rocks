@@ -17,13 +17,18 @@
 }
 
 .blog-post-preview-image-container {
-    max-width: 10em;
-    min-width: 10em;
-    min-height: 10em;
+    max-width: 7.5em;
+    min-width: 7.5em;
+    min-height: 7.5em;
     padding-right: 2em;
+    padding-bottom: 2em;
 }
 
 .blog-post-title {
+    text-decoration: none;
+}
+
+.blog-post-description {
     text-decoration: none;
 }
 
