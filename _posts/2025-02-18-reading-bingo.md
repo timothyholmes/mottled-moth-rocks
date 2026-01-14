@@ -25,7 +25,7 @@ Boards for this year are available [here](/assets/docs/reading-bingo-2025.pdf "D
 
 If you complete a full board, you can restart with a new board from any year.
 
-I recommend finding a group of friends to make league! [Please let me know](/contact/) if you enjoy the idea so I can include it in next year's blog post. :^)
+I recommend finding a group of friends to make a league! [Please let me know](/contact/) if you enjoy the idea so I can include it in next year's blog post. :^)
 
 <div class="album-art">
     <img
