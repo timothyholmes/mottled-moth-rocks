@@ -20,8 +20,8 @@ My goal completion rate in 2025 declined a bit from the previous year, [clocking
 
 I think there were _legitimate_ reasons that these stalled, such as a lack of market fit for the app I was developing and external collaborators dragging their feet. While I'm not necessarily happy with the outcomes, from failure comes lessons which help me approach new challenges. I've made some progress on them both, pivoting on app ideas for something that has a clearly defined purpose and re-staffing the EP's contributors.
 
-1. 75 Medium Challenge
-    * A collection of daily routines concerning fitness, mental health, and creativity to be done consistently for 75 days straight.
+1. 60 Day Reset
+    * A collection of daily routines concerning fitness, mental health, and creativity to be done consistently at the start of the year.
 2. Grow Cosmic Strain
     * With a new EP, a new practice spot geared toward refinement of our sound, and plenty of shows under our belt, there's a lot of potential here. This needs refinement on **how**, but essentially should result in new music, media, and a larger fanbase.
 3. Mottled Moth presents The Grownd Proulers EP
