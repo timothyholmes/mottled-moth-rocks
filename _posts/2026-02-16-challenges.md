@@ -5,6 +5,7 @@ date:   2026-02-16 16:09:08 -0500
 categories: system
 description: Timeboxed effort
 permalink: /system/2025/05/07/challenges.html
+permalink: /2026-02-16/challenges.html
 previewImage: /assets/images/2026-challenges/waterfall-small.png
 ---
 
