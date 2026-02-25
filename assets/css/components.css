@@ -135,3 +135,9 @@ a:hover {
     display: flex;
     height: 450px;
 }
+
+.contact-heading {
+    margin-top: 1.5em;
+    text-align: center;
+    font-style: italic;
+}

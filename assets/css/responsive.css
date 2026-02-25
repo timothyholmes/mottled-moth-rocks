@@ -1,5 +1,10 @@
 /* Responsive Styles - Media Queries */
 
+:root {
+    --color-light-bg: #eaecf6;
+    --color-light-text: #021174;
+}
+
 @media (min-width: 0px) {
     nav > a {
         font-size: 1em;
@@ -212,37 +217,37 @@
 @media (prefers-color-scheme: light) {
     body {
         height: 100%;
-        background-color: #eaecf6;
-        color: #021174;
+        background-color: var(--color-light-bg);
+        color: var(--color-light-text);
         padding: 0;
         margin: 0;
     }
 
     a {
-        color: #021174;
+        color: var(--color-light-text);
     }
 
     .landing-card {
-        background-color: #081253;
-        color: #eaecf6;
+        background-color: var(--color-light-text);
+        color: var(--color-light-bg);
     }
 
     .landing-card-subtitle {
-        color: #eaecf6;
+        color: var(--color-light-bg);
     }
 
     .nav-item {
         border: 2px solid black;
-        box-shadow: 10px 4px 0px #021174;
-        background-color: #eaecf6;
-        color: #021174;
+        box-shadow: 10px 4px 0px var(--color-light-text);
+        background-color: var(--color-light-bg);
+        color: var(--color-light-text);
     }
 
     .nav-item:hover {
         animation: none;
-        color: #eaecf6;
-        background-color: #021174;
-        border: 2px solid #021174;
+        color: var(--color-light-bg);
+        background-color: var(--color-light-text);
+        border: 2px solid var(--color-light-text);
     }
 
     .no-hover {
@@ -255,15 +260,15 @@
     }
 
     .blog-date {
-        color: #021174;
+        color: var(--color-light-text);
     }
 
     blockquote {
-        color: #021174;
+        color: var(--color-light-text);
     }
 
     /* Drop cap color for light mode */
     .page-body > p:first-of-type::first-letter {
-        color: #021174;
+        color: var(--color-light-text);
     }
 }
