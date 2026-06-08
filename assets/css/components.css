@@ -25,6 +25,26 @@
     font-style: none;
 }
 
+.goodbye-content {
+    min-width: 800px;
+}
+
+@media (max-width: 800px) {
+    .goodbye-content {
+        min-width: unset;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .goodbye-content .image-row-half {
+        width: 100%;
+    }
+
+    .goodbye-text {
+        margin-left: 0;
+    }
+}
+
 .goodbye-text {
     margin-left: 2em;
     margin-left: 2em;
