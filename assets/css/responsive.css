@@ -1,8 +1,8 @@
 /* Responsive Styles - Media Queries */
 
 :root {
-    --color-light-bg: #eaecf6;
-    --color-light-text: #021174;
+    --color-light-bg: #f9eed5d5;
+    --color-light-text: #090f0b;
 }
 
 @media (min-width: 0px) {
@@ -11,7 +11,7 @@
         padding-right: 4%;
     }
     
-    .header-text {
+    .header-text, .goodbye-header {
         font-size: 4.5em;
     }
 
@@ -50,7 +50,7 @@
         padding-right: 4%;
     }
     
-    .header-text {
+    .header-text, .goodbye-header {
         font-size: 4.5em;
     }
 
@@ -84,7 +84,7 @@
 }
 
 @media (min-width: 850px) {
-    .header-text {
+    .header-text, .goodbye-header {
         font-size: 5em;
     }
 
@@ -110,7 +110,7 @@
 }
 
 @media (min-width: 1024px) {
-    .header-text {
+    .header-text, .goodbye-header {
         font-size: 6em;
     }
 
@@ -143,7 +143,7 @@
 }
 
 @media (min-width: 1250px) {
-    .header-text {
+    .header-text, .goodbye-header {
         font-size: 7em;
     }
 
@@ -163,7 +163,7 @@
 }
 
 @media (min-width: 1680px) {
-    .header-text {
+    .header-text, .goodbye-header {
         font-size: 7em;
     }
 
@@ -175,7 +175,7 @@
 }
 
 @media (min-width: 2100px) {
-    .header-text {
+    .header-text, .goodbye-header {
         font-size: 8em;
     }
 
@@ -221,6 +221,10 @@
         color: var(--color-light-text);
         padding: 0;
         margin: 0;
+    }
+
+    .signature {
+        filter: invert(0) sepia(1) saturate(0.5) hue-rotate(120deg) brightness(0.1) contrast(1.2);
     }
 
     a {

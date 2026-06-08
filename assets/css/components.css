@@ -20,6 +20,32 @@
     animation: none;
 }
 
+.goodbye-header {
+    font-weight: bolder;
+    font-style: none;
+}
+
+.goodbye-text {
+    margin-left: 2em;
+    margin-left: 2em;
+    text-align: left;
+}
+
+.goodbye-contact {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 2.75em;
+    margin-bottom: 1em;
+}
+
+.goodbye-navbar {
+    margin-bottom: 8em;
+}
+
+.signature {
+    filter: invert(1) sepia(1) saturate(2) hue-rotate(5deg) brightness(1.05);
+}
+
 .no-hover {
     box-shadow: none;
 }
