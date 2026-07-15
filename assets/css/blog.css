@@ -24,6 +24,47 @@
     padding-bottom: 2em;
 }
 
+/* Thumbnail masks.
+   Every preview image is clipped into one of six shapes, cycling down the list
+   so neighbouring posts never share one. Shapes are declared here rather than
+   in base.css because only the blog layouts load this file.
+   The polygons assume a square; every previewImage is one, and aspect-ratio
+   below keeps that true if a non-square image ever lands in the list.
+
+   The pointed shapes alternate an outer radius of 50% with an inner radius that
+   sets how much of the photo survives in the middle. Keep that inner radius near
+   half the outer one — the textbook ratios (0.38 for a five-point star) make
+   elegant spikes but leave too little of the image readable at 143px. */
+.blog-list {
+    --shape-star: polygon(50% 0%, 65.3% 29%, 97.6% 34.6%, 74.7% 58%,
+        79.4% 90.5%, 50% 76%, 20.6% 90.5%, 25.3% 58%, 2.5% 34.6%, 34.7% 29%);
+    --shape-asterisk: polygon(50% 0%, 63% 27.5%, 93.3% 25%, 76% 50%,
+        93.3% 75%, 63% 72.5%, 50% 100%, 37% 72.5%, 6.7% 75%, 24% 50%,
+        6.7% 25%, 37% 27.5%);
+    --shape-hexagon: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    --shape-diamond: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    --shape-cross: polygon(35% 0%, 65% 0%, 65% 35%, 100% 35%, 100% 65%,
+        65% 65%, 65% 100%, 35% 100%, 35% 65%, 0% 65%, 0% 35%, 35% 35%);
+    --shape-burst: polygon(50% 0%, 60.7% 24.1%, 85.4% 14.6%, 75.9% 39.3%,
+        100% 50%, 75.9% 60.7%, 85.4% 85.4%, 60.7% 75.9%, 50% 100%, 39.3% 75.9%,
+        14.6% 85.4%, 24.1% 60.7%, 0% 50%, 24.1% 39.3%, 14.6% 14.6%, 39.3% 24.1%);
+}
+
+.blog-post-preview-image {
+    aspect-ratio: 1;
+    object-fit: cover;
+    clip-path: var(--thumb-shape, none);
+}
+
+/* Alternates spiked and flat-sided shapes so the three star-like masks never
+   land next to each other. */
+.blog-list > li:nth-child(6n + 1) { --thumb-shape: var(--shape-star); }
+.blog-list > li:nth-child(6n + 2) { --thumb-shape: var(--shape-hexagon); }
+.blog-list > li:nth-child(6n + 3) { --thumb-shape: var(--shape-asterisk); }
+.blog-list > li:nth-child(6n + 4) { --thumb-shape: var(--shape-diamond); }
+.blog-list > li:nth-child(6n + 5) { --thumb-shape: var(--shape-burst); }
+.blog-list > li:nth-child(6n + 6) { --thumb-shape: var(--shape-cross); }
+
 .blog-post-title {
     text-decoration: none;
 }
@@ -39,7 +80,7 @@
 }
 
 .blog-date {
-    color: #d9d5c5;
+    color: var(--meta);
     font-style: italic;
     text-decoration: none;
     margin-top: -1em;
@@ -66,5 +107,5 @@
     float: left;
     margin-right: 0.1em;
     margin-top: 0.05em;
-    color: #b1a280;
+    color: var(--accent);
 }

@@ -1,4 +1,78 @@
-/* Base Styles - Typography, HTML Elements, and Core Resets */
+/* Base Styles - Design Tokens, Typography, HTML Elements, and Core Resets */
+
+/* Design tokens.
+   The --color-* block holds raw palette values and is the only place a literal
+   colour should appear. Everything else refers to the semantic tokens below,
+   which get re-pointed for light mode in the media query further down. */
+:root {
+    /* Raw palette */
+    --color-forest: #102116;
+    --color-cream: #f5ebd3;
+    --color-tan: #b1a280;
+    --color-ink: #090f0b;
+    --color-parchment: #f9eed5d5;
+    --color-black: #000;
+
+    /* Page */
+    --bg: var(--color-forest);
+    --fg: var(--color-cream);
+    --link: #faf3d4;
+    --quote: #e0d9ba;
+    --meta: #d9d5c5;
+    --accent: var(--color-tan);
+
+    /* The hard offset shadow shared by nav items and landing cards */
+    --shadow-color: var(--color-tan);
+    --shadow-offset: 10px 4px;
+    --surface-border: var(--color-black);
+
+    /* Nav items */
+    --nav-bg: var(--color-cream);
+    --nav-fg: var(--color-black);
+    --nav-hover-bg: var(--color-forest);
+    --nav-hover-fg: var(--color-cream);
+    --nav-hover-border: var(--color-cream);
+
+    /* Landing cards invert the page: --fg background, --bg text. Only the
+       subtitle needs a token of its own. */
+    --card-subtitle: #192c20;
+
+    /* Rules and code keep the same colours in both themes */
+    --rule: var(--color-cream);
+    --code-bg: #2d2d2d;
+    --code-fg: #f8f8f2;
+    --code-border: #3d3d3d;
+
+    --signature-filter: invert(1) sepia(1) saturate(2) hue-rotate(5deg) brightness(1.05);
+
+    /* Layout. --measure is the text column; the container adds --gutter on
+       each side on top of it. */
+    --measure: 880px;
+    --gutter: 1.25rem;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: var(--color-parchment);
+        --fg: var(--color-ink);
+        --link: var(--color-ink);
+        --quote: var(--color-ink);
+        --meta: var(--color-ink);
+        --accent: var(--color-ink);
+
+        --shadow-color: var(--color-ink);
+
+        --nav-bg: var(--color-parchment);
+        --nav-fg: var(--color-ink);
+        --nav-hover-bg: var(--color-ink);
+        --nav-hover-fg: var(--color-parchment);
+        --nav-hover-border: var(--color-ink);
+
+        --card-subtitle: var(--color-parchment);
+
+        --signature-filter: invert(0) sepia(1) saturate(0.5) hue-rotate(120deg) brightness(0.1) contrast(1.2);
+    }
+}
 
 html {
     font-family: "Merriweather", sans-serif !important;
@@ -10,8 +84,8 @@ html {
 
 body {
     height: 100%;
-    background-color: #102116;
-    color: #f5ebd3;
+    background-color: var(--bg);
+    color: var(--fg);
     padding: 0;
     margin: 0;
 }
@@ -25,7 +99,7 @@ img {
 }
 
 a {
-    color: #faf3d4;
+    color: var(--link);
 }
 
 h2 {
@@ -37,11 +111,11 @@ blockquote {
     font-style: italic;
     padding-top: 5px;
     padding-bottom: 5px;
-    color: #e0d9ba;
+    color: var(--quote);
 }
 
 hr {
-    border: .02em solid #f5ebd3;
+    border: .02em solid var(--rule);
     opacity: .7;
 }
 
@@ -58,10 +132,10 @@ code {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9em;
     padding: 2px 6px;
-    background-color: #2d2d2d;
-    color: #f8f8f2;
+    background-color: var(--code-bg);
+    color: var(--code-fg);
     border-radius: 3px;
-    border: 1px solid #3d3d3d;
+    border: 1px solid var(--code-border);
 }
 
 /* Code inside pre tags (syntax highlighted blocks) - remove inline code styling */

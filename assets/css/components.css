@@ -1,11 +1,11 @@
 /* Component Styles - Reusable UI Components */
 
 .nav-item {
-    border: 2px solid black;
-    box-shadow: 10px 4px 0px rgb(177, 162, 128);
+    border: 2px solid var(--surface-border);
+    box-shadow: var(--shadow-offset) 0px var(--shadow-color);
     transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    color: black;
-    background-color: #f5ebd3;
+    color: var(--nav-fg);
+    background-color: var(--nav-bg);
     padding: 12px 24px;
     text-align: center;
     text-decoration: none;
@@ -14,9 +14,9 @@
 
 .nav-item:hover {
     box-shadow: none;
-    background-color: #102116;
-    color: #f5ebd3;
-    border: 2px solid #f5ebd3;
+    background-color: var(--nav-hover-bg);
+    color: var(--nav-hover-fg);
+    border: 2px solid var(--nav-hover-border);
     animation: none;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .signature {
-    filter: invert(1) sepia(1) saturate(2) hue-rotate(5deg) brightness(1.05);
+    filter: var(--signature-filter);
 }
 
 .no-hover {
@@ -72,7 +72,7 @@
 
 .no-hover:hover {
     animation: none;
-    color: black;
+    color: var(--color-black);
 }
 
 .landing-section-heading {
@@ -83,14 +83,15 @@
     margin-bottom: 4em;
 }
 
+/* Inverts the page: cream on forest in dark, ink on parchment in light. */
 .landing-card {
-    border: 2px solid black;
+    border: 2px solid var(--surface-border);
     /* border-radius: 10px; */
     padding: .75em;
     width: 100%;
-    background-color: #11261fc0;
-    box-shadow: 10px 4px 0px rgb(177, 162, 128);
-    color: #f5ebd3;
+    background-color: var(--fg);
+    box-shadow: var(--shadow-offset) 0px var(--shadow-color);
+    color: var(--bg);
     font-size: 1.25em;
     text-align: center;
     text-decoration: none;
@@ -104,7 +105,7 @@
 }
 
 .landing-card-subtitle {
-    color: #cfc4ac;
+    color: var(--card-subtitle);
     font-size: .75em;
     font-style: italic;
 }
@@ -126,10 +127,10 @@ a:hover {
 
 .text-stroke {
     text-shadow:
-        -4px -4px 0 #f5ebd3,
-        4px -4px 0 #f5ebd3,
-        -4px 4px 0 #f5ebd3,
-        4px 4px 0 #f5ebd3;
+        -4px -4px 0 var(--color-cream),
+        4px -4px 0 var(--color-cream),
+        -4px 4px 0 var(--color-cream),
+        4px 4px 0 var(--color-cream);
 }
 
 .link-list {

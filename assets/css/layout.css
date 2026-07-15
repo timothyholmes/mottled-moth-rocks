@@ -16,6 +16,17 @@
     margin-top: 3em;
 }
 
+/* The measure. Header and body share one centred container so the text column
+   stays a constant width instead of tracking the viewport. Must come after the
+   padding shorthands above so the inline padding wins. */
+.page-header,
+.page-body {
+    width: 100%;
+    max-width: calc(var(--measure) + var(--gutter) * 2);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+}
+
 .music-links {
     text-align: center;
     margin-top: 2em;
