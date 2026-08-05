@@ -1,0 +1,36 @@
+{%- comment -%}
+Renders one post as a <li> for .blog-list. Used twice by _layouts/blog.html: for the
+visible paginated list and for the hidden full index that blog-search.js filters over.
+Most posts tag themselves with `categories`, a couple with `tags`; merge both.
+{%- endcomment -%}
+{%- assign post_tags = include.post.categories | concat: include.post.tags | uniq -%}
+{%- capture tag_slugs -%}
+{%- for tag in post_tags %}{{ tag | slugify }} {% endfor -%}
+{%- endcapture -%}
+<li data-title="{{ include.post.title | escape }}" data-description="{{ include.post.description | escape }}" data-tags="{{ tag_slugs | strip }}">
+    <article class="blog-post-preview">
+        {%- if include.post.previewImage %}
+        <div class="blog-post-preview-image-container">
+            <a href="{{ include.post.url }}" tabindex="-1" aria-hidden="true">
+                <img src="{{ include.post.previewImage }}" class="blog-post-preview-image" alt="" loading="lazy" />
+            </a>
+        </div>
+        {%- endif %}
+        <div class="blog-post-preview-text">
+            <div class="blog-post-preview-head">
+                <a class="blog-post-title" href="{{ include.post.url }}">{{ include.post.title }}</a>
+                <p class="blog-post-description">{{ include.post.description }}</p>
+            </div>
+            <div class="blog-post-preview-foot">
+                <p class="blog-post-meta">{{ include.post.date | date: "%B %-d, %Y" }}</p>
+                {%- if post_tags.size > 0 %}
+                <p class="tag-list">
+                    {%- for tag in post_tags %}
+                    <a class="tag-chip" data-tag="{{ tag | slugify }}" href="/blog/?tag={{ tag | slugify }}">#{{ tag }}</a>
+                    {%- endfor %}
+                </p>
+                {%- endif %}
+            </div>
+        </div>
+    </article>
+</li>

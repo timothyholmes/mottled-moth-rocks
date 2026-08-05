@@ -40,11 +40,17 @@
     line-height: 0.7;
 }
 
+/* Flex rather than inline-block so items wrap into even rows on narrow
+   viewports. The column gap clears the 10px hard shadow on .nav-item. */
 .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8em 1.25em;
     text-align: center;
 }
 
 nav > a {
     font-size: 1.3em;
-    padding-right: 4%;
 }

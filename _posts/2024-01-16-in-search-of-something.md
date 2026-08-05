@@ -3,6 +3,7 @@ layout: blog-post
 title:  "In Search of Something"
 date:   2024-01-16 20:55:08 -0500
 tags: creativity project
+artist: Mottled Moth
 description: Inaugural release from Mottled Moth
 previewImage: /assets/images/isos_small.png
 permalink: /2024/01/16/in-search-of-something.html

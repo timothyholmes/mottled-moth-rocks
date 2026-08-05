@@ -13,6 +13,14 @@
     --color-parchment: #f9eed5d5;
     --color-black: #000;
 
+    /* Accent cycle. Four muted hues drawn from the same earth range as the
+       palette above; --accent-a..d get assigned round-robin to nav items and
+       tag chips so a row of them reads as varied rather than uniform. */
+    --accent-a: #c4703f;
+    --accent-b: #b89a3c;
+    --accent-c: #7ba05b;
+    --accent-d: #6a8ca8;
+
     /* Page */
     --bg: var(--color-forest);
     --fg: var(--color-cream);
@@ -59,6 +67,12 @@
         --quote: var(--color-ink);
         --meta: var(--color-ink);
         --accent: var(--color-ink);
+
+        /* Darkened so they hold contrast against parchment rather than cream */
+        --accent-a: #9c4f22;
+        --accent-b: #8a7118;
+        --accent-c: #4d7238;
+        --accent-d: #3f6280;
 
         --shadow-color: var(--color-ink);
 

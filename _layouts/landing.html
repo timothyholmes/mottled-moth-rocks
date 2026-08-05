@@ -24,42 +24,93 @@
         <section>
             <div class="content">
                 <main class="page-body">
-                    <div>
-                        <p class="tagline">A blog about 
-                            <a class="tagline-link" href="/creativity/2025/01/24/guitar-gear.html">playing guitar</a>, 
-                            <a class="tagline-link" href="/2025-07-24/decade-of-software.html">programming</a>, 
-                            and <a class="tagline-link" href="/system/2024/02/02/the-path.html">finding purpose</a>.</p>
+                    <p class="tagline">A blog about
+                        <a class="tagline-link" href="/creativity/2025/01/24/guitar-gear.html">playing guitar</a>,
+                        <a class="tagline-link" href="/2025-07-24/decade-of-software.html">programming</a>,
+                        and <a class="tagline-link" href="/system/2024/02/02/the-path.html">finding purpose</a>.</p>
 
-                        <section class="landing-section">
+                    <div class="landing-grid">
+                        {%- assign featured = site.posts.first %}
+                        <section class="landing-feature">
                             <h2 class="landing-section-heading">Latest Post</h2>
-                            {% for post in site.posts limit:1 %}
-                            <a href="{{ post.url }}">
-                                <div class="landing-card">
-                                    {{ post.title }}</br>
-                                    <span class="landing-card-subtitle">{{ post.description}}</span>
-                                </div>
-                            </a>
-                            {% endfor %}
-                        </section>
-
-                        <section class="landing-section">
-                            <h2 class="landing-section-heading">Latest Releases</h2>
-                            <a href="/2026/02/06/everybody.html">
-                                <div class="landing-card">
-                                    Everybody</br>
-                                    <span class="landing-card-subtitle">Mottled Moth</span>
-                                </div>
-                            </a>
-                            
-                            <a href="/creativity/project/2025/07/16/sarcoma.html">
-                                <div class="landing-card">
-                                    Sarcoma</br>
-                                    <span class="landing-card-subtitle">Cosmic Strain</span>
-                                </div>
+                            <a class="feature-card" href="{{ featured.url }}">
+                                {%- if featured.previewImage %}
+                                <span class="feature-card-image">
+                                    <img src="{{ featured.previewImage }}" alt="" />
+                                </span>
+                                {%- endif %}
+                                <span class="feature-card-text">
+                                    <span class="feature-card-title">{{ featured.title }}</span>
+                                    <span class="feature-card-description">{{ featured.description }}</span>
+                                    <span class="feature-card-date">{{ featured.date | date: "%B %-d, %Y" }}</span>
+                                </span>
                             </a>
                         </section>
 
-                        <section class="landing-section">
+                        {%- comment -%}
+                        Releases are just the newest posts tagged `project` — no separate list to
+                        keep in sync. Older posts tag with `tags:` rather than `categories:`, so
+                        check both. `release_urls` is collected here and reused below.
+                        {%- endcomment -%}
+                        {%- assign release_count = 0 -%}
+                        {%- assign release_urls = "" -%}
+                        <section class="landing-rail">
+                            <h2 class="landing-section-heading">Releases</h2>
+                            <ul class="release-list">
+                                {%- for post in site.posts %}
+                                {%- if release_count >= 3 %}{% break %}{% endif %}
+                                {%- unless post.categories contains 'project' or post.tags contains 'project' %}{% continue %}{% endunless %}
+                                {%- assign release_count = release_count | plus: 1 %}
+                                {%- assign release_urls = release_urls | append: post.url | append: "," %}
+                                <li>
+                                    <a class="release-card" href="{{ post.url }}">
+                                        <img class="release-card-art" src="{{ post.previewImage }}" alt="" loading="lazy" />
+                                        <span class="release-card-text">
+                                            <span class="release-card-title">{{ post.title }}</span>
+                                            <span class="release-card-meta">
+                                                {%- if post.artist %}{{ post.artist }} &middot; {% endif -%}
+                                                {{ post.date | date: "%Y" }}</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                {%- endfor %}
+                            </ul>
+                            {%- comment -%}
+                            "Releases" is the public label; the filter behind it is the `project`
+                            tag, same as the chips on each post.
+                            {%- endcomment -%}
+                            <p class="section-link"><a href="/blog/?tag=project">All releases &rarr;</a></p>
+                        </section>
+
+                        <section class="landing-more">
+                            <h2 class="landing-section-heading">More Reading</h2>
+                            {%- comment -%}
+                            Skip the featured post and anything already in the release rail (see
+                            `release_urls` above), so a new album doesn't show up twice on one screen.
+                            {%- endcomment -%}
+                            {%- assign shown = 0 -%}
+                            <ul class="more-list">
+                                {%- for post in site.posts offset:1 %}
+                                {%- if shown >= 3 %}{% break %}{% endif %}
+                                {%- if release_urls contains post.url %}{% continue %}{% endif %}
+                                {%- assign shown = shown | plus: 1 %}
+                                <li>
+                                    <a class="more-card" href="{{ post.url }}">
+                                        {%- if post.previewImage %}
+                                        <img class="more-card-image" src="{{ post.previewImage }}" alt="" loading="lazy" />
+                                        {%- endif %}
+                                        <span class="more-card-text">
+                                            <span class="more-card-title">{{ post.title }}</span>
+                                            <span class="more-card-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                {%- endfor %}
+                            </ul>
+                            <p class="section-link"><a href="/blog">Read the whole archive &rarr;</a></p>
+                        </section>
+
+                        <section class="landing-gallery">
                             <div class="image-row">
                                 <img class="image-row-two-thirds" src="/assets/images/about.JPG"
                                     alt="Chilling with the pyramid fountain at Lewis Ginter Botanical Garden" />
@@ -68,7 +119,7 @@
                             </div>
 
                             <div class="caption">
-                                Pyramid fountain at <a href="https://www.lewisginter.org">Lewis Ginter Botanical Garden.</a> 
+                                Pyramid fountain at <a href="https://www.lewisginter.org">Lewis Ginter Botanical Garden.</a>
                                 +
                                 Cosmic Strain by <a href="https://www.instagram.com/joshgilly/">Josh Gilliland</a></div>
                         </section>

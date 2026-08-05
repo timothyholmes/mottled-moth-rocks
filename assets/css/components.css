@@ -2,6 +2,7 @@
 
 .nav-item {
     border: 2px solid var(--surface-border);
+    border-bottom: 5px solid var(--nav-accent, var(--accent-a));
     box-shadow: var(--shadow-offset) 0px var(--shadow-color);
     transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     color: var(--nav-fg);
@@ -12,13 +13,29 @@
     display: inline-block;
 }
 
+/* The accent bar survives hover; only the other three sides swap. */
 .nav-item:hover {
     box-shadow: none;
     background-color: var(--nav-hover-bg);
     color: var(--nav-hover-fg);
-    border: 2px solid var(--nav-hover-border);
+    border-color: var(--nav-hover-border) var(--nav-hover-border) var(--nav-accent, var(--accent-a));
     animation: none;
 }
+
+/* .link-list uses nth-of-type because its anchors are interleaved with headings
+   and <br>, which nth-child would count. */
+.nav-bar .nav-item:nth-child(4n + 1),
+.music-links .nav-item:nth-child(4n + 1),
+.link-list .nav-item:nth-of-type(4n + 1) { --nav-accent: var(--accent-a); }
+.nav-bar .nav-item:nth-child(4n + 2),
+.music-links .nav-item:nth-child(4n + 2),
+.link-list .nav-item:nth-of-type(4n + 2) { --nav-accent: var(--accent-b); }
+.nav-bar .nav-item:nth-child(4n + 3),
+.music-links .nav-item:nth-child(4n + 3),
+.link-list .nav-item:nth-of-type(4n + 3) { --nav-accent: var(--accent-c); }
+.nav-bar .nav-item:nth-child(4n + 4),
+.music-links .nav-item:nth-child(4n + 4),
+.link-list .nav-item:nth-of-type(4n + 4) { --nav-accent: var(--accent-d); }
 
 .goodbye-header {
     font-weight: bolder;
@@ -75,12 +92,249 @@
     color: var(--color-black);
 }
 
-.landing-section-heading {
-    font-size: 2em;
+/* Landing page.
+   A 12-column grid so the page reads as panels rather than one stacked column:
+   the featured post takes 7, the release rail 5, and the two full-width rows
+   below span all 12. Everything collapses to one column under 800px. */
+.landing-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2.5em 2em;
+    align-items: start;
 }
+
+.landing-feature { grid-column: span 7; }
+.landing-rail { grid-column: span 5; }
+.landing-more,
+.landing-gallery { grid-column: span 12; }
+
+@media (max-width: 800px) {
+    .landing-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5em;
+    }
+
+    .landing-feature,
+    .landing-rail,
+    .landing-more,
+    .landing-gallery {
+        grid-column: span 1;
+    }
+}
+
+.landing-section-heading {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin: 0 0 .75em;
+    padding-bottom: .3em;
+    border-bottom: 3px solid var(--section-accent, var(--accent-a));
+}
+
+.landing-feature .landing-section-heading { --section-accent: var(--accent-a); }
+.landing-rail .landing-section-heading { --section-accent: var(--accent-d); }
+.landing-more .landing-section-heading { --section-accent: var(--accent-c); }
 
 .landing-section {
     margin-bottom: 4em;
+}
+
+/* Featured post: image on top, text filling the panel below it. Sized to
+   roughly match the release rail beside it. */
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--surface-border);
+    border-left: 6px solid var(--accent-a);
+    box-shadow: var(--shadow-offset) 0 var(--shadow-color);
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--fg);
+    transition: box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    box-shadow: none;
+    animation: none;
+}
+
+.feature-card-image {
+    display: block;
+    height: 13em;
+    border-bottom: 2px solid var(--surface-border);
+}
+
+.feature-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.feature-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: .35em;
+    padding: 1.1em 1.3em;
+}
+
+.feature-card-title {
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.feature-card-description {
+    font-style: italic;
+    font-size: .9em;
+}
+
+.feature-card-date {
+    color: var(--meta);
+    font-size: .75em;
+    letter-spacing: .04em;
+    margin-top: .3em;
+}
+
+/* Release rail: compact rows of album art + title. */
+.release-list,
+.more-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.release-list > li {
+    margin-bottom: .9em;
+}
+
+.release-card {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    border: 2px solid var(--surface-border);
+    border-left: 6px solid var(--rail-accent, var(--accent-d));
+    box-shadow: var(--shadow-offset) 0 var(--shadow-color);
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--fg);
+    transition: box-shadow 0.3s ease;
+}
+
+.release-card:hover {
+    box-shadow: none;
+    animation: none;
+}
+
+.release-list > li:nth-child(4n + 1) .release-card { --rail-accent: var(--accent-d); }
+.release-list > li:nth-child(4n + 2) .release-card { --rail-accent: var(--accent-c); }
+.release-list > li:nth-child(4n + 3) .release-card { --rail-accent: var(--accent-b); }
+.release-list > li:nth-child(4n + 4) .release-card { --rail-accent: var(--accent-a); }
+
+.release-card-art {
+    flex: 0 0 3.5em;
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+    align-self: stretch;
+    object-fit: cover;
+    border-right: 2px solid var(--surface-border);
+}
+
+.release-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .15em;
+    padding: .55em .8em;
+    /* flex + min-width keep long titles inside the card instead of pushing the
+       text column past the border; the rail is narrow enough to hit this. */
+    flex: 1;
+    min-width: 0;
+}
+
+.release-card-title {
+    font-weight: 700;
+    font-size: .85em;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+}
+
+.release-card-meta {
+    color: var(--meta);
+    font-size: .72em;
+    letter-spacing: .03em;
+}
+
+/* More reading: three across on desktop, stacking with the grid below 800px. */
+.more-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+}
+
+@media (max-width: 800px) {
+    .more-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.more-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid var(--surface-border);
+    box-shadow: var(--shadow-offset) 0 var(--shadow-color);
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--fg);
+    transition: box-shadow 0.3s ease;
+}
+
+.more-card:hover {
+    box-shadow: none;
+    animation: none;
+}
+
+.more-list > li:nth-child(3n + 1) .more-card { border-top: 6px solid var(--accent-b); }
+.more-list > li:nth-child(3n + 2) .more-card { border-top: 6px solid var(--accent-c); }
+.more-list > li:nth-child(3n + 3) .more-card { border-top: 6px solid var(--accent-d); }
+
+.more-card-image {
+    width: 100%;
+    height: 7em;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid var(--surface-border);
+}
+
+.more-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5em;
+    flex: 1;
+    padding: .8em 1em;
+}
+
+.more-card-title {
+    font-weight: 700;
+    font-size: .95em;
+    line-height: 1.25;
+}
+
+.more-card-date {
+    color: var(--meta);
+    font-size: .72em;
+    letter-spacing: .03em;
+}
+
+/* The "see everything" link closing a landing section. Shared by the release
+   rail and More Reading so both sit the same distance below their list. */
+.section-link {
+    margin: 1.25em 0 0;
+    text-align: right;
+    font-size: .85em;
 }
 
 /* Inverts the page: cream on forest in dark, ink on parchment in light. */
@@ -114,7 +368,7 @@
     font-style: none;
     font-size: 2em;
     text-align: center;
-    margin: 3em 0;
+    margin: 1.5em 0 2em;
 }
 
 .tagline-link {

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/assets/css/responsive.css">
 
     <script data-goatcounter="https://mottled-moth-rocks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script src="/assets/js/blog-search.js" defer></script>
 </head>
 
 <body>
@@ -25,31 +26,30 @@
     <section>
         <div class="content">
             <main class="page-body">
-                <ul class="blog-list">
+                <form class="blog-search" role="search" onsubmit="return false;">
+                    <input type="search" id="blog-search-input" class="blog-search-input"
+                        placeholder="Search posts and #tags" aria-label="Search posts">
+                </form>
+
+                <p class="blog-search-status" id="blog-search-status" hidden></p>
+
+                <ul class="blog-list" id="blog-list">
                     {% for post in paginator.posts %}
-                    <li>
-                    <section class="blog-post-preview">
-                        {% if post.previewImage %}
-                        <section class="blog-post-preview-image-container">
-                            <a href="{{ post.url }}">
-                                <img src="{{ post.previewImage }}" class="blog-post-preview-image" />
-                            </a>
-                        </section>
-                        {% else %}
-                        <section class="blog-post-preview-image-container">
-                        </section>
-                        {% endif %}
-                        <section class="blog-post-preview-text">
-                            <span><a class="blog-post-title" href="{{ post.url }}">{{ post.title }}</a></span><br>
-                            <span><a class="blog-date" href="{{ post.url }}">{{ post.date | date: "%B, %-d %Y" }}</a></span><br>
-                            <span><a class="blog-post-description" href="{{ post.url }}">{{ post.description }}</a></span>
-                        </section>
-                    </section>
-                    </li>
+                    {% include blog-post-item.html post=post %}
                     {% endfor %}
                 </ul>
 
-                <div class="pagination nav-bar">
+                {%- comment -%}
+                Every post, not just this page's, so blog-search.js can filter across the whole
+                archive without a network request. Hidden until a filter is active.
+                {%- endcomment -%}
+                <ul class="blog-list" id="blog-list-all" hidden>
+                    {% for post in site.posts %}
+                    {% include blog-post-item.html post=post %}
+                    {% endfor %}
+                </ul>
+
+                <div class="pagination nav-bar" id="blog-pagination">
                     {% if paginator.previous_page %}
                     <a href="{{ paginator.previous_page_path }}" class="previous nav-item">&laquo; Previous</a>
                     {% endif %}

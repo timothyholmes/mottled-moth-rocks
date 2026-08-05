@@ -3,6 +3,7 @@ layout: blog-post
 title:  "Everybody"
 date:   2026-02-06 19:06:08 -0500
 categories: creativity project
+artist: Mottled Moth
 description: New single from Mottled Moth
 previewImage: /assets/images/2026-02-06-everybody/everybody-art-small.png
 permalink: /2026/02/06/everybody.html

@@ -3,6 +3,7 @@ layout: blog-post
 title:  "Cosmic Strain and Mottled Moth"
 date:   2024-01-17 19:06:08 -0500
 categories: creativity project
+artist: Split release
 description: A split release with the prince of shoegaze
 previewImage: /assets/images/split_small.png
 permalink: /creativity/project/2024/01/17/cosmic-strain-split.html
