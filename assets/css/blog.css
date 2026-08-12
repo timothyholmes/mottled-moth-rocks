@@ -142,13 +142,14 @@
 .tag-list > .tag-chip:nth-child(4n + 4) { --chip-accent: var(--accent-d); }
 
 /* One colour per taxonomy term, so a tag reads the same everywhere it appears.
-   Must follow the positional rules above to win. */
-.tag-chip[data-tag="system"] { --chip-accent: var(--accent-a); }
-.tag-chip[data-tag="creativity"] { --chip-accent: var(--accent-b); }
-.tag-chip[data-tag="project"] { --chip-accent: var(--accent-c); }
-.tag-chip[data-tag="lore"] { --chip-accent: var(--accent-d); }
-.tag-chip[data-tag="knowledge"] { --chip-accent: var(--accent-c); }
-.tag-chip[data-tag="annual"] { --chip-accent: var(--accent-a); }
+   Uses .tag-list > to match specificity (0,3,0) of the nth-child rules above,
+   so source order settles it — these come last and win. */
+.tag-list > .tag-chip[data-tag="system"]     { --chip-accent: var(--accent-a); }
+.tag-list > .tag-chip[data-tag="creativity"] { --chip-accent: var(--accent-b); }
+.tag-list > .tag-chip[data-tag="project"]    { --chip-accent: var(--accent-c); }
+.tag-list > .tag-chip[data-tag="lore"]       { --chip-accent: var(--accent-d); }
+.tag-list > .tag-chip[data-tag="knowledge"]  { --chip-accent: var(--accent-e); }
+.tag-list > .tag-chip[data-tag="annual"]     { --chip-accent: var(--accent-f); }
 
 .blog-post-header {
     margin-bottom: 2.5em;

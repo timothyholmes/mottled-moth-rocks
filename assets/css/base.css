@@ -13,13 +13,15 @@
     --color-parchment: #f9eed5d5;
     --color-black: #000;
 
-    /* Accent cycle. Four muted hues drawn from the same earth range as the
-       palette above; --accent-a..d get assigned round-robin to nav items and
-       tag chips so a row of them reads as varied rather than uniform. */
+    /* Accent cycle. Six muted hues drawn from the same earth range as the
+       palette above; --accent-a..d get assigned round-robin to nav items,
+       and each maps to a specific taxonomy tag so chips read consistently. */
     --accent-a: #c4703f;
     --accent-b: #b89a3c;
     --accent-c: #7ba05b;
     --accent-d: #6a8ca8;
+    --accent-e: #9b72b5;
+    --accent-f: #b56a7a;
 
     /* Page */
     --bg: var(--color-forest);
@@ -73,6 +75,8 @@
         --accent-b: #8a7118;
         --accent-c: #4d7238;
         --accent-d: #3f6280;
+        --accent-e: #6d4d90;
+        --accent-f: #8a3d50;
 
         --shadow-color: var(--color-ink);
 
