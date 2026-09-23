@@ -6,22 +6,25 @@
    which get re-pointed for light mode in the media query further down. */
 :root {
     /* Raw palette */
-    --color-forest: #102116;
+    --color-forest: #060b08;
     --color-cream: #f5ebd3;
     --color-tan: #b1a280;
     --color-ink: #090f0b;
     --color-parchment: #f9eed5d5;
     --color-black: #000;
 
-    /* Accent cycle. Six muted hues drawn from the same earth range as the
-       palette above; --accent-a..d get assigned round-robin to nav items,
-       and each maps to a specific taxonomy tag so chips read consistently. */
-    --accent-a: #c4703f;
-    --accent-b: #b89a3c;
-    --accent-c: #7ba05b;
-    --accent-d: #6a8ca8;
-    --accent-e: #9b72b5;
-    --accent-f: #b56a7a;
+    /* Accent palette. Eight bright, saturated hues — primaries first, then
+       secondaries — so --accent-a..d (the round-robin cycle used by nav items,
+       cards and rails) reads red / yellow / blue / green. Each taxonomy tag
+       maps to its own hue; --accent-g and -h are spare for new tags. */
+    --accent-a: #ff3b3b; /* red */
+    --accent-b: #ffd60a; /* yellow */
+    --accent-c: #3d7bff; /* blue */
+    --accent-d: #1fe06a; /* green */
+    --accent-e: #b45cff; /* violet */
+    --accent-f: #ff8a00; /* orange */
+    --accent-g: #00d4ff; /* cyan */
+    --accent-h: #ff2eb4; /* magenta */
 
     /* Page */
     --bg: var(--color-forest);
@@ -70,13 +73,15 @@
         --meta: var(--color-ink);
         --accent: var(--color-ink);
 
-        /* Darkened so they hold contrast against parchment rather than cream */
-        --accent-a: #9c4f22;
-        --accent-b: #8a7118;
-        --accent-c: #4d7238;
-        --accent-d: #3f6280;
-        --accent-e: #6d4d90;
-        --accent-f: #8a3d50;
+        /* Same hues, deepened to hold 4.5:1 contrast against parchment */
+        --accent-a: #d10f1f;
+        --accent-b: #8a5f00;
+        --accent-c: #0a47e0;
+        --accent-d: #007a36;
+        --accent-e: #7a1fd6;
+        --accent-f: #b34700;
+        --accent-g: #00739e;
+        --accent-h: #c80078;
 
         --shadow-color: var(--color-ink);
 

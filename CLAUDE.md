@@ -121,7 +121,8 @@ Hand-written, no framework and no preprocessor. Load order matters and is set by
 palette (forest, cream, tan, ink, parchment) plus semantic tokens (`--bg`, `--fg`, `--link`,
 `--accent`, `--shadow-color`, the `--nav-*` set), and a single `prefers-color-scheme: light` media
 query re-points them. `--accent-a` through `--accent-d` are a four-hue cycle assigned round-robin
-to nav items, blog cards, and tag chips; they are re-pointed to darker values in light mode so
+to nav items, blog cards, and tag chips. `--accent-e` through `--accent-h` extend the palette to
+eight saturated hues so each taxonomy tag gets its own colour, with two spare. All eight are re-pointed to darker values in light mode so
 they hold contrast on parchment. Do not hardcode a color anywhere else — `base.css` is the only file that should
 contain a literal. Landing cards derive from the page (`background: var(--fg); color: var(--bg)`), so
 one rule is correct in both themes.

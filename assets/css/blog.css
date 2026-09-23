@@ -136,10 +136,14 @@
 }
 
 /* Positional fallback for any tag outside the taxonomy below. */
-.tag-list > .tag-chip:nth-child(4n + 1) { --chip-accent: var(--accent-a); }
-.tag-list > .tag-chip:nth-child(4n + 2) { --chip-accent: var(--accent-b); }
-.tag-list > .tag-chip:nth-child(4n + 3) { --chip-accent: var(--accent-c); }
-.tag-list > .tag-chip:nth-child(4n + 4) { --chip-accent: var(--accent-d); }
+.tag-list > .tag-chip:nth-child(8n + 1) { --chip-accent: var(--accent-a); }
+.tag-list > .tag-chip:nth-child(8n + 2) { --chip-accent: var(--accent-b); }
+.tag-list > .tag-chip:nth-child(8n + 3) { --chip-accent: var(--accent-c); }
+.tag-list > .tag-chip:nth-child(8n + 4) { --chip-accent: var(--accent-d); }
+.tag-list > .tag-chip:nth-child(8n + 5) { --chip-accent: var(--accent-e); }
+.tag-list > .tag-chip:nth-child(8n + 6) { --chip-accent: var(--accent-f); }
+.tag-list > .tag-chip:nth-child(8n + 7) { --chip-accent: var(--accent-g); }
+.tag-list > .tag-chip:nth-child(8n + 8) { --chip-accent: var(--accent-h); }
 
 /* One colour per taxonomy term, so a tag reads the same everywhere it appears.
    Uses .tag-list > to match specificity (0,3,0) of the nth-child rules above,
