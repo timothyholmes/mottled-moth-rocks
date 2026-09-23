@@ -26,39 +26,89 @@
     <section>
         <div class="content">
             <main class="page-body">
-                <form class="blog-search" role="search" onsubmit="return false;">
-                    <input type="search" id="blog-search-input" class="blog-search-input"
-                        placeholder="Search posts and #tags" aria-label="Search posts">
-                </form>
+                <div class="blog-search-row">
+                    <form class="blog-search" role="search" onsubmit="return false;">
+                        <input type="search" id="blog-search-input" class="blog-search-input"
+                            placeholder="Search posts and #tags" aria-label="Search posts">
+                    </form>
 
-                <p class="blog-search-status" id="blog-search-status" hidden></p>
+                    {%- comment -%}
+                    Sits beside the search box rather than on its own line, so it appearing or
+                    disappearing doesn't shift the sidebar/list below.
+                    {%- endcomment -%}
+                    <p class="blog-search-status" id="blog-search-status" hidden></p>
+                </div>
 
-                <ul class="blog-list" id="blog-list">
-                    {% for post in paginator.posts %}
-                    {% include blog-post-item.html post=post %}
-                    {% endfor %}
-                </ul>
+                <div class="blog-layout">
+                    {%- comment -%}
+                    Every taxonomy term in use, curated order first (matching the palette in
+                    blog.css) then anything outside it alphabetically. Tucked behind a toggle
+                    button on narrow viewports so it doesn't push the list down; forced open as
+                    a fixed column by the desktop media query in blog.css.
+                    {%- endcomment -%}
+                    {%- assign known_order = "system,creativity,project,lore,knowledge,annual" | split: "," -%}
+                    {%- assign all_raw = "" | split: "" -%}
+                    {%- for post in site.posts -%}
+                    {%- assign post_tags = post.categories | concat: post.tags -%}
+                    {%- assign all_raw = all_raw | concat: post_tags -%}
+                    {%- endfor -%}
+                    {%- assign all_raw = all_raw | uniq | sort -%}
+                    {%- assign sidebar_tags = "" | split: "" -%}
+                    {%- for t in known_order -%}
+                    {%- if all_raw contains t -%}
+                    {%- assign sidebar_tags = sidebar_tags | push: t -%}
+                    {%- endif -%}
+                    {%- endfor -%}
+                    {%- for t in all_raw -%}
+                    {%- unless sidebar_tags contains t -%}
+                    {%- assign sidebar_tags = sidebar_tags | push: t -%}
+                    {%- endunless -%}
+                    {%- endfor -%}
+                    <aside class="tag-sidebar">
+                        <button type="button" class="tag-sidebar-toggle" id="tag-sidebar-toggle"
+                            aria-expanded="false" aria-controls="tag-sidebar-list">
+                            Filter by tag
+                        </button>
+                        <fieldset class="tag-sidebar-list" id="tag-sidebar-list"
+                            aria-label="Select tags to filter posts" hidden>
+                            {%- for tag in sidebar_tags %}
+                            <label class="tag-chip tag-filter-chip" data-tag="{{ tag | slugify }}">
+                                <input type="checkbox" class="tag-filter-checkbox" value="{{ tag | slugify }}">
+                                #{{ tag }}
+                            </label>
+                            {%- endfor %}
+                        </fieldset>
+                    </aside>
 
-                {%- comment -%}
-                Every post, not just this page's, so blog-search.js can filter across the whole
-                archive without a network request. Hidden until a filter is active.
-                {%- endcomment -%}
-                <ul class="blog-list" id="blog-list-all" hidden>
-                    {% for post in site.posts %}
-                    {% include blog-post-item.html post=post %}
-                    {% endfor %}
-                </ul>
+                    <div class="blog-main">
+                        <ul class="blog-list" id="blog-list">
+                            {% for post in paginator.posts %}
+                            {% include blog-post-item.html post=post %}
+                            {% endfor %}
+                        </ul>
 
-                <div class="pagination nav-bar" id="blog-pagination">
-                    {% if paginator.previous_page %}
-                    <a href="{{ paginator.previous_page_path }}" class="previous nav-item">&laquo; Previous</a>
-                    {% endif %}
-                
-                    <span class="page_number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
-                
-                    {% if paginator.next_page %}
-                    <a href="{{ paginator.next_page_path }}" class="next nav-item">Next &raquo;</a>
-                    {% endif %}
+                        {%- comment -%}
+                        Every post, not just this page's, so blog-search.js can filter across the whole
+                        archive without a network request. Hidden until a filter is active.
+                        {%- endcomment -%}
+                        <ul class="blog-list" id="blog-list-all" hidden>
+                            {% for post in site.posts %}
+                            {% include blog-post-item.html post=post %}
+                            {% endfor %}
+                        </ul>
+
+                        <div class="pagination nav-bar" id="blog-pagination">
+                            {% if paginator.previous_page %}
+                            <a href="{{ paginator.previous_page_path }}" class="previous nav-item">&laquo; Previous</a>
+                            {% endif %}
+
+                            <span class="page_number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+
+                            {% if paginator.next_page %}
+                            <a href="{{ paginator.next_page_path }}" class="next nav-item">Next &raquo;</a>
+                            {% endif %}
+                        </div>
+                    </div>
                 </div>
             </main>
             <footer class="page-footer">{% include footer.html %}</footer>

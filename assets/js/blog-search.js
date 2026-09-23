@@ -7,6 +7,11 @@
     var index = document.getElementById('blog-list-all');
     var status = document.getElementById('blog-search-status');
     var pagination = document.getElementById('blog-pagination');
+    var sidebarToggle = document.getElementById('tag-sidebar-toggle');
+    var sidebarList = document.getElementById('tag-sidebar-list');
+    var sidebarCheckboxes = Array.prototype.slice.call(
+        document.querySelectorAll('.tag-filter-checkbox')
+    );
 
     if (!input || !list || !index || !status) {
         return;
@@ -14,6 +19,19 @@
 
     var paginatedItems = Array.prototype.slice.call(list.children);
     var allItems = Array.prototype.slice.call(index.children);
+
+    // Keeps the sidebar checkboxes showing whatever tags are active in the
+    // query, however they got there (typed, a chip click, or the URL param),
+    // and opens the panel on narrow viewports so an active filter is visible.
+    function syncSidebar(tags) {
+        sidebarCheckboxes.forEach(function (box) {
+            box.checked = tags.indexOf(box.value) !== -1;
+        });
+        if (sidebarToggle && sidebarList && tags.length > 0) {
+            sidebarList.hidden = false;
+            sidebarToggle.setAttribute('aria-expanded', 'true');
+        }
+    }
 
     function parse(raw) {
         var tokens = raw.toLowerCase().split(/\s+/).filter(Boolean);
@@ -70,6 +88,9 @@
     function apply() {
         var raw = input.value.trim();
         var url = new URL(window.location.href);
+        var query = raw ? parse(raw) : { tags: [], text: '' };
+
+        syncSidebar(query.tags);
 
         if (!raw) {
             list.replaceChildren.apply(list, paginatedItems);
@@ -82,7 +103,6 @@
             return;
         }
 
-        var query = parse(raw);
         var found = allItems.filter(function (item) {
             return matches(item, query);
         });
@@ -118,6 +138,34 @@
         event.preventDefault();
         input.value = '#' + new URL(chip.href).searchParams.get('tag');
         apply();
+    });
+
+    if (sidebarToggle && sidebarList) {
+        sidebarToggle.addEventListener('click', function () {
+            var expanded = sidebarToggle.getAttribute('aria-expanded') === 'true';
+            sidebarToggle.setAttribute('aria-expanded', String(!expanded));
+            sidebarList.hidden = expanded;
+        });
+    }
+
+    // Sidebar checkboxes rebuild the input from whatever free text is
+    // already there plus every checked tag, so multiple tags AND together
+    // the same way a typed "#foo #bar" query does.
+    sidebarCheckboxes.forEach(function (box) {
+        box.addEventListener('change', function () {
+            var current = parse(input.value.trim());
+            var checkedTags = sidebarCheckboxes
+                .filter(function (b) { return b.checked; })
+                .map(function (b) { return b.value; });
+
+            var parts = current.text ? [current.text] : [];
+            checkedTags.forEach(function (tag) {
+                parts.push('#' + tag);
+            });
+
+            input.value = parts.join(' ');
+            apply();
+        });
     });
 
     var initialTag = new URL(window.location.href).searchParams.get('tag');

@@ -143,13 +143,113 @@
 
 /* One colour per taxonomy term, so a tag reads the same everywhere it appears.
    Uses .tag-list > to match specificity (0,3,0) of the nth-child rules above,
-   so source order settles it — these come last and win. */
-.tag-list > .tag-chip[data-tag="system"]     { --chip-accent: var(--accent-a); }
-.tag-list > .tag-chip[data-tag="creativity"] { --chip-accent: var(--accent-b); }
-.tag-list > .tag-chip[data-tag="project"]    { --chip-accent: var(--accent-c); }
-.tag-list > .tag-chip[data-tag="lore"]       { --chip-accent: var(--accent-d); }
-.tag-list > .tag-chip[data-tag="knowledge"]  { --chip-accent: var(--accent-e); }
-.tag-list > .tag-chip[data-tag="annual"]     { --chip-accent: var(--accent-f); }
+   so source order settles it — these come last and win. The sidebar's filter
+   chips (below) share the same taxonomy, so they're included here too. */
+.tag-list > .tag-chip[data-tag="system"],
+.tag-sidebar-list > .tag-filter-chip[data-tag="system"]     { --chip-accent: var(--accent-a); }
+.tag-list > .tag-chip[data-tag="creativity"],
+.tag-sidebar-list > .tag-filter-chip[data-tag="creativity"] { --chip-accent: var(--accent-b); }
+.tag-list > .tag-chip[data-tag="project"],
+.tag-sidebar-list > .tag-filter-chip[data-tag="project"]    { --chip-accent: var(--accent-c); }
+.tag-list > .tag-chip[data-tag="lore"],
+.tag-sidebar-list > .tag-filter-chip[data-tag="lore"]       { --chip-accent: var(--accent-d); }
+.tag-list > .tag-chip[data-tag="knowledge"],
+.tag-sidebar-list > .tag-filter-chip[data-tag="knowledge"]  { --chip-accent: var(--accent-e); }
+.tag-list > .tag-chip[data-tag="annual"],
+.tag-sidebar-list > .tag-filter-chip[data-tag="annual"]     { --chip-accent: var(--accent-f); }
+
+/* Tag sidebar: a filter panel beside the blog list on wide viewports (see the
+   min-width media query below), tucked behind a toggle button above the list
+   on narrow ones so it's out of the way but still reachable. The panel is a
+   plain [hidden] fieldset rather than <details> — forcing a closed <details>'s
+   content visible doesn't reliably restore its box height across browsers. */
+.blog-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.tag-sidebar-toggle {
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    color: var(--fg);
+    background: transparent;
+    border: 2px solid var(--surface-border);
+    box-shadow: var(--shadow-offset) 0 var(--shadow-color);
+    padding: .6em 1em;
+    transition: box-shadow 0.3s ease;
+}
+
+.tag-sidebar-toggle:hover {
+    box-shadow: none;
+}
+
+.tag-sidebar-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6em;
+    margin: .75em 0 0;
+    padding: 0;
+    border: none;
+}
+
+.tag-sidebar-list[hidden] {
+    display: none;
+}
+
+.tag-filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .4em;
+    cursor: pointer;
+}
+
+.tag-filter-chip input {
+    accent-color: var(--chip-accent, var(--accent-a));
+    margin: 0;
+}
+
+/* Positional fallback for any tag outside the taxonomy above. */
+.tag-sidebar-list > .tag-filter-chip:nth-child(4n + 1) { --chip-accent: var(--accent-a); }
+.tag-sidebar-list > .tag-filter-chip:nth-child(4n + 2) { --chip-accent: var(--accent-b); }
+.tag-sidebar-list > .tag-filter-chip:nth-child(4n + 3) { --chip-accent: var(--accent-c); }
+.tag-sidebar-list > .tag-filter-chip:nth-child(4n + 4) { --chip-accent: var(--accent-d); }
+
+.blog-main {
+    min-width: 0;
+}
+
+/* Wide enough to hold a fixed sidebar column beside the list without
+   squeezing the cards. Matches the 800px collapse point used by the landing
+   grid elsewhere in the site. */
+@media (min-width: 800px) {
+    .blog-layout {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        align-items: start;
+        gap: 2em;
+    }
+
+    .tag-sidebar-toggle {
+        display: none;
+    }
+
+    /* Overrides the [hidden] attribute so the panel always reads as a fixed
+       column here, independent of the toggle state used on narrow viewports. */
+    .tag-sidebar-list[hidden] {
+        display: flex;
+    }
+
+    .tag-sidebar-list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0;
+        border: 2px solid var(--surface-border);
+        box-shadow: var(--shadow-offset) 0 var(--shadow-color);
+        padding: 1em;
+    }
+}
 
 .blog-post-header {
     margin-bottom: 2.5em;
@@ -178,8 +278,19 @@
     margin: .35em 0 0;
 }
 
-.blog-search {
+/* Search box and result count share one row so the count appearing or
+   disappearing doesn't shift the sidebar/list below. The count sits on the
+   right and never wraps; only under 500px does it drop to its own line. */
+.blog-search-row {
+    display: flex;
+    align-items: center;
+    gap: 1em;
     margin-bottom: 1.5em;
+}
+
+.blog-search {
+    flex: 1;
+    min-width: 0;
 }
 
 .blog-search-input {
@@ -200,12 +311,26 @@
 .blog-search-status {
     color: var(--meta);
     font-size: .85em;
-    margin: 0 0 1.5em;
+    margin: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .blog-search-clear {
     color: inherit;
     margin-left: .5em;
+}
+
+@media (max-width: 500px) {
+    .blog-search-row {
+        flex-wrap: wrap;
+    }
+
+    .blog-search-status {
+        flex-basis: 100%;
+        text-align: right;
+        white-space: normal;
+    }
 }
 
 .page_number {
