@@ -118,8 +118,11 @@
     gap: .4em;
 }
 
+/* --chip-ink is the accent deepened for legibility (a no-op in dark mode);
+   text and fills use it, the border keeps the vivid accent. */
 .tag-chip {
-    color: var(--chip-accent, var(--accent-a));
+    --chip-ink: color-mix(in oklab, var(--chip-accent, var(--accent-a)), var(--fg) var(--accent-text-shade));
+    color: var(--chip-ink);
     border: 1px solid var(--chip-accent, var(--accent-a));
     border-radius: 999px;
     padding: .05em .7em;
@@ -130,37 +133,32 @@
 }
 
 .tag-chip:hover {
-    background-color: var(--chip-accent, var(--accent-a));
+    background-color: var(--chip-ink);
     color: var(--bg);
     animation: none;
 }
 
-/* Positional fallback for any tag outside the taxonomy below. */
-.tag-list > .tag-chip:nth-child(8n + 1) { --chip-accent: var(--accent-a); }
-.tag-list > .tag-chip:nth-child(8n + 2) { --chip-accent: var(--accent-b); }
-.tag-list > .tag-chip:nth-child(8n + 3) { --chip-accent: var(--accent-c); }
-.tag-list > .tag-chip:nth-child(8n + 4) { --chip-accent: var(--accent-d); }
-.tag-list > .tag-chip:nth-child(8n + 5) { --chip-accent: var(--accent-e); }
-.tag-list > .tag-chip:nth-child(8n + 6) { --chip-accent: var(--accent-f); }
-.tag-list > .tag-chip:nth-child(8n + 7) { --chip-accent: var(--accent-g); }
-.tag-list > .tag-chip:nth-child(8n + 8) { --chip-accent: var(--accent-h); }
+/* Positional fallback for any tag outside the taxonomy below. Wrapped in
+   :where() so it carries zero specificity and any per-term rule beats it
+   regardless of source order. */
+:where(.tag-list > .tag-chip:nth-child(8n + 1)) { --chip-accent: var(--accent-a); }
+:where(.tag-list > .tag-chip:nth-child(8n + 2)) { --chip-accent: var(--accent-b); }
+:where(.tag-list > .tag-chip:nth-child(8n + 3)) { --chip-accent: var(--accent-c); }
+:where(.tag-list > .tag-chip:nth-child(8n + 4)) { --chip-accent: var(--accent-d); }
+:where(.tag-list > .tag-chip:nth-child(8n + 5)) { --chip-accent: var(--accent-e); }
+:where(.tag-list > .tag-chip:nth-child(8n + 6)) { --chip-accent: var(--accent-f); }
+:where(.tag-list > .tag-chip:nth-child(8n + 7)) { --chip-accent: var(--accent-g); }
+:where(.tag-list > .tag-chip:nth-child(8n + 8)) { --chip-accent: var(--accent-h); }
 
-/* One colour per taxonomy term, so a tag reads the same everywhere it appears.
-   Uses .tag-list > to match specificity (0,3,0) of the nth-child rules above,
-   so source order settles it — these come last and win. The sidebar's filter
-   chips (below) share the same taxonomy, so they're included here too. */
-.tag-list > .tag-chip[data-tag="system"],
-.tag-sidebar-list > .tag-filter-chip[data-tag="system"]     { --chip-accent: var(--accent-a); }
-.tag-list > .tag-chip[data-tag="creativity"],
-.tag-sidebar-list > .tag-filter-chip[data-tag="creativity"] { --chip-accent: var(--accent-b); }
-.tag-list > .tag-chip[data-tag="project"],
-.tag-sidebar-list > .tag-filter-chip[data-tag="project"]    { --chip-accent: var(--accent-c); }
-.tag-list > .tag-chip[data-tag="lore"],
-.tag-sidebar-list > .tag-filter-chip[data-tag="lore"]       { --chip-accent: var(--accent-d); }
-.tag-list > .tag-chip[data-tag="knowledge"],
-.tag-sidebar-list > .tag-filter-chip[data-tag="knowledge"]  { --chip-accent: var(--accent-e); }
-.tag-list > .tag-chip[data-tag="annual"],
-.tag-sidebar-list > .tag-filter-chip[data-tag="annual"]     { --chip-accent: var(--accent-f); }
+/* One colour per taxonomy term, so a tag reads the same everywhere it appears:
+   post cards, post headers, and the sidebar filter chips (which also carry
+   .tag-chip). Keyed on data-tag alone, so no positional rule can override it. */
+.tag-chip[data-tag="system"]     { --chip-accent: var(--accent-a); }
+.tag-chip[data-tag="creativity"] { --chip-accent: var(--accent-b); }
+.tag-chip[data-tag="project"]    { --chip-accent: var(--accent-c); }
+.tag-chip[data-tag="lore"]       { --chip-accent: var(--accent-d); }
+.tag-chip[data-tag="knowledge"]  { --chip-accent: var(--accent-e); }
+.tag-chip[data-tag="annual"]     { --chip-accent: var(--accent-f); }
 
 /* Tag sidebar: a filter panel beside the blog list on wide viewports (see the
    min-width media query below), tucked behind a toggle button above the list
@@ -203,22 +201,42 @@
 }
 
 .tag-filter-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: .4em;
     cursor: pointer;
 }
 
+/* The checkbox stays in the DOM for keyboard and screen-reader use but is
+   visually hidden; the chip itself shows the state, filling in when checked
+   the same way it does on hover. */
 .tag-filter-chip input {
-    accent-color: var(--chip-accent, var(--accent-a));
-    margin: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
-/* Positional fallback for any tag outside the taxonomy above. */
-.tag-sidebar-list > .tag-filter-chip:nth-child(4n + 1) { --chip-accent: var(--accent-a); }
-.tag-sidebar-list > .tag-filter-chip:nth-child(4n + 2) { --chip-accent: var(--accent-b); }
-.tag-sidebar-list > .tag-filter-chip:nth-child(4n + 3) { --chip-accent: var(--accent-c); }
-.tag-sidebar-list > .tag-filter-chip:nth-child(4n + 4) { --chip-accent: var(--accent-d); }
+.tag-filter-chip:has(input:checked) {
+    background-color: var(--chip-ink);
+    color: var(--bg);
+}
+
+.tag-filter-chip:has(input:focus-visible) {
+    outline: 2px solid var(--chip-accent, var(--accent-a));
+    outline-offset: 2px;
+}
+
+/* Positional fallback for any tag outside the taxonomy above; zero
+   specificity for the same reason as the .tag-list fallback. */
+:where(.tag-sidebar-list > .tag-filter-chip:nth-child(8n + 1)) { --chip-accent: var(--accent-a); }
+:where(.tag-sidebar-list > .tag-filter-chip:nth-child(8n + 2)) { --chip-accent: var(--accent-b); }
+:where(.tag-sidebar-list > .tag-filter-chip:nth-child(8n + 3)) { --chip-accent: var(--accent-c); }
+:where(.tag-sidebar-list > .tag-filter-chip:nth-child(8n + 4)) { --chip-accent: var(--accent-d); }
+:where(.tag-sidebar-list > .tag-filter-chip:nth-child(8n + 5)) { --chip-accent: var(--accent-e); }
+:where(.tag-sidebar-list > .tag-filter-chip:nth-child(8n + 6)) { --chip-accent: var(--accent-f); }
+:where(.tag-sidebar-list > .tag-filter-chip:nth-child(8n + 7)) { --chip-accent: var(--accent-g); }
+:where(.tag-sidebar-list > .tag-filter-chip:nth-child(8n + 8)) { --chip-accent: var(--accent-h); }
 
 .blog-main {
     min-width: 0;

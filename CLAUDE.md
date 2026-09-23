@@ -122,8 +122,10 @@ palette (forest, cream, tan, ink, parchment) plus semantic tokens (`--bg`, `--fg
 `--accent`, `--shadow-color`, the `--nav-*` set), and a single `prefers-color-scheme: light` media
 query re-points them. `--accent-a` through `--accent-d` are a four-hue cycle assigned round-robin
 to nav items, blog cards, and tag chips. `--accent-e` through `--accent-h` extend the palette to
-eight saturated hues so each taxonomy tag gets its own colour, with two spare. All eight are re-pointed to darker values in light mode so
-they hold contrast on parchment. Do not hardcode a color anywhere else — `base.css` is the only file that should
+eight saturated hues so each taxonomy tag gets its own colour, with two spare. In light mode all eight
+keep their dark-mode OKLCH hue at the most chroma that still holds 3:1 on parchment (they're mostly
+borders); small text drawn in an accent — the tag chips' `--chip-ink` — is deepened further by
+mixing in `--accent-text-shade` of `--fg` so it clears 4.5:1. Do not hardcode a color anywhere else — `base.css` is the only file that should
 contain a literal. Landing cards derive from the page (`background: var(--fg); color: var(--bg)`), so
 one rule is correct in both themes.
 

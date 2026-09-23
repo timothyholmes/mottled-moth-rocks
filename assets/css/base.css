@@ -26,6 +26,10 @@
     --accent-g: #00d4ff; /* cyan */
     --accent-h: #ff2eb4; /* magenta */
 
+    /* How much --fg to mix into an accent used as small text. Zero here; light
+       mode raises it so chip text clears 4.5:1 while borders stay vivid. */
+    --accent-text-shade: 0%;
+
     /* Page */
     --bg: var(--color-forest);
     --fg: var(--color-cream);
@@ -73,15 +77,21 @@
         --meta: var(--color-ink);
         --accent: var(--color-ink);
 
-        /* Same hues, deepened to hold 4.5:1 contrast against parchment */
-        --accent-a: #d10f1f;
-        --accent-b: #8a5f00;
-        --accent-c: #0a47e0;
-        --accent-d: #007a36;
-        --accent-e: #7a1fd6;
-        --accent-f: #b34700;
-        --accent-g: #00739e;
-        --accent-h: #c80078;
+        /* Same OKLCH hues as dark mode at the most chroma sRGB allows while
+           holding 3:1 against parchment (the non-text contrast floor — most
+           accents are borders). Red, blue, violet and magenta keep their full
+           dark-mode chroma; the naturally light hues (yellow, green, orange,
+           cyan) can't go that dark without greying and land at 71–85%. Text
+           drawn in an accent deepens further via --accent-text-shade. */
+        --accent-a: #fd3939;
+        --accent-b: #9f8500;
+        --accent-c: #3d7bff;
+        --accent-d: #009c45;
+        --accent-e: #b35bfe;
+        --accent-f: #cd6e00;
+        --accent-g: #0093b2;
+        --accent-h: #f722ae;
+        --accent-text-shade: 20%;
 
         --shadow-color: var(--color-ink);
 
